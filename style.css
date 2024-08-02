@@ -1,0 +1,28 @@
+/* header styles starts */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e8e1d6;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    
+   
+}
+
+header.scrolled {
+    background-color: rgb(255, 255, 255, 0.08) !important;
+    opacity: 1;
+    backdrop-filter: blur(52px);
+}
+.img-container{
+    background-image: url("https://noveloffice.in/wp-content/uploads/2024/04/coustomizedofficebg-ezgif-scaled.webp");
+    background-size: cover;
+}
+/* header styles ends */
+
+/* Footer styles starts */
+.footer {
+    min-height: 310px;
+}
+/* Footer styles ends */

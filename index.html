@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script
+        src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style for to customize tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgColor: "#e8e1d6",
+                        color: "#000",
+                        white:"#fff"
+                    },
+                    fontSize: {
+                        '18px': '18px',
+                        '30px':'30px'
+                    }
+                }
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.getElementsByTagName('header')[0];
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 0) {
+                    console.log(window.scrollY)
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="h-20 p-2.5 font-[Abhaya]">
+        <nav class="">
+            <div>
+                <ul class="flex items-center justify-center gap-[4vw]  ">
+                    <li>
+                        <a class="text-18px font-bold" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-18px font-bold" href="#">Properties</a>
+                    </li>
+                    <li>
+                        <a class="text-18px font-bold" href="#">About</a>
+                    </li>
+                    <li>
+                        <img class="w-60" src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp"
+                            alt="logo">
+                    </li>
+                    <li>
+                        <a class="text-18px font-bold" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="text-18px font-bold" href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text-18px font-bold" href="#">Blog</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <div class="h-screen img-container"></div>
+    <div class="h-screen bg-bgColor"></div>
+    <div class="h-screen"></div>
+
+    <footer class="bg-black footer p-2.5">
+        <div class="flex flex-row p-2.5">
+            <div class="w-1/2 flex items-center justify-around">
+                <img class="h-20 w-80" src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp"
+                alt="logo">
+            </div>
+            <div class="w-1/2 flex-column items-center justify-around">
+                <div class="w-2/5 p-2.5">
+                    <h4 class="text-white flex justify-start font-[Abhaya] text-30px font-semibold border-b border-white">Contact US</h4>
+                </div>
+                <div class="flex flex-row justify-between w-3/5">
+                    <div class="w-1/2">
+                        <li class="text-white font-[Abhaya]">3457682344</li>
+                        <li class="text-white font-[Abhaya]">info@zenithhome@gmail.com</li>
+                    </div>
+                    <div class="w-1/2">
+                        <p class="text-white font-[Abhaya]">Zenith</p>
+                        <p class="text-white font-[Abhaya]">257 North Cañon Drive, 2nd Floor</p>
+                        <p class="text-white font-[Abhaya]">Beverly Hills, CA 90210</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2.5">
+            <p class="text-white flex justify-center font-[Abhaya]"> Copyright @ 2022 Novel office. All rights reserved. Privacy-Policy T&C</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
