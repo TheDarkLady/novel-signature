@@ -25,11 +25,13 @@
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff) format('woff');
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff2) format('woff2');
+    font-weight: 500;
 }
 
 @font-face {
@@ -78,10 +80,42 @@ header.scrolled {
     backdrop-filter: blur(52px);
 }
 
-.img-container {
-    background-image: url("https://noveloffice.in/wp-content/uploads/2024/04/coustomizedofficebg-ezgif-scaled.webp");
-    background-size: cover;
+ul li {
+    display: inline-block;
+    position: relative;
 }
+
+ul li a{
+    display: block;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    padding: 5px 10px;
+}
+
+ul li ul.dropdown {
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 55px;
+    background-color: #faf6f09e;
+    backdrop-filter: blur(52px);
+    z-index: 2;
+    font-family: "Abhaya libre";
+    display: none;
+}
+
+ul li a:hover{
+    border: #e8e1d6;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+   
+}
+
+
 
 /* header styles ends */
 
@@ -92,7 +126,22 @@ header.scrolled {
 
 /* Footer styles ends */
 
+
+/* body styles starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Abhaya libre';
     font-weight: bold;
 }
+
+.img-container {
+    background-image: url("https://noveloffice.in/wp-content/uploads/2024/04/coustomizedofficebg-ezgif-scaled.webp");
+    background-size: cover;
+}
+
+/* body styles ends */
