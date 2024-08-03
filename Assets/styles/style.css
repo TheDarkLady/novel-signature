@@ -1,3 +1,65 @@
+/* Fonts  */
+
+/* Adding Abhaya libre font  starts*/
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-extrabold-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-extrabold-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Abhaya libre';
+    src: url(../fonts/AbhayaLibre/abhayalibre-regular-webfont.woff2) format('woff2');
+}
+/* Adding Abhaya libre font  ends */
+
+/* Adding Rollgates font  starts */
+
+@font-face{
+    font-family: 'Rollgates';
+    src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Rollgates';
+    src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff2) format('woff2');
+}
+/* Adding Rollgates font  ends  */
+
+/* Fonts */
+
+
+
 /* header styles starts */
 header {
     position: fixed;
@@ -16,10 +78,10 @@ header.scrolled {
     backdrop-filter: blur(52px);
 }
 
-/* .img-container {
+.img-container {
     background-image: url("https://noveloffice.in/wp-content/uploads/2024/04/coustomizedofficebg-ezgif-scaled.webp");
     background-size: cover;
-} */
+}
 
 /* header styles ends */
 
@@ -32,4 +94,5 @@ header.scrolled {
 
 body {
     font-family: 'Abhaya libre';
+    font-weight: bold;
 }
