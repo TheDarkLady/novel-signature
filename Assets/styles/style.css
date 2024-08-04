@@ -80,6 +80,22 @@ header.scrolled {
     backdrop-filter: blur(52px);
 }
 
+.hamburger{
+    background-color: #e8e1d6;
+}
+
+#close-hamburger, #hamburger-menu{
+    display: none;
+}
+
+#open-hamburger{
+    display: block;
+}
+
+#close-hamburger-submenu, #hamburger-submenu{
+    display: none; 
+}
+
 ul li {
     display: inline-block;
     position: relative;
@@ -98,7 +114,7 @@ ul li ul.dropdown {
     width: 200px;
     padding: 10px;
     position: absolute;
-    top: 55px;
+    top: 80px;
     background-color: #faf6f09e;
     backdrop-filter: blur(52px);
     z-index: 2;
