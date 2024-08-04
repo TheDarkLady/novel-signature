@@ -1,4 +1,4 @@
-//  Header on scroll backgrroud blur
+//  script for header on scroll backgronud blur starts
 document.addEventListener('DOMContentLoaded', function () {
             const header = document.getElementsByTagName('header')[0];
 
@@ -11,3 +11,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
+
+// script for header on scroll backgronud blur ends
