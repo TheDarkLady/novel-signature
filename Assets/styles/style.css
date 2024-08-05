@@ -7,7 +7,7 @@
     src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff) format('woff');
 }
 
-@font-face{
+@font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff2) format('woff2');
 }
@@ -43,21 +43,23 @@
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-regular-webfont.woff2) format('woff2');
 }
+
 /* Adding Abhaya libre font  ends */
 
 /* Adding Rollgates font  starts */
 
-@font-face{
+@font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff) format('woff');
     font-weight: 500;
 }
 
-@font-face{
+@font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff2) format('woff2');
     font-weight: 500;
 }
+
 /* Adding Rollgates font  ends  */
 
 /* Fonts */
@@ -82,20 +84,22 @@ header.scrolled {
     backdrop-filter: blur(52px);
 }
 
-.hamburger{
+.hamburger {
     background-color: #e8e1d6;
 }
 
-#close-hamburger, #hamburger-menu{
+#close-hamburger,
+#hamburger-menu {
     display: none;
 }
 
-#open-hamburger{
+#open-hamburger {
     display: block;
 }
 
-#close-hamburger-submenu, #hamburger-submenu{
-    display: none; 
+#close-hamburger-submenu,
+#hamburger-submenu {
+    display: none;
 }
 
 ul li {
@@ -103,11 +107,11 @@ ul li {
     position: relative;
 }
 
-ul li a{
+ul li a {
     display: block;
 }
 
-ul li ul.dropdown li{
+ul li ul.dropdown li {
     display: block;
     padding: 5px 10px;
 }
@@ -124,13 +128,13 @@ ul li ul.dropdown {
     display: none;
 }
 
-ul li a:hover{
+ul li a:hover {
     border: #e8e1d6;
 }
 
-ul li:hover ul.dropdown{
+ul li:hover ul.dropdown {
     display: block;
-   
+
 }
 
 
@@ -142,20 +146,21 @@ ul li:hover ul.dropdown{
     min-height: 250px;
 }
 
-.footer-contact-us{
+.footer-contact-us {
     font-size: 30px;
 }
 
 @media screen and (max-width: 431px) {
-    .footer-contact-us{
+    .footer-contact-us {
         font-size: 25px;
     }
 }
+
 /* Footer styles ends */
 
 
 /* body styles starts */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -173,7 +178,7 @@ body {
 
 /* banner styles statrts */
 
-.banner-heading{
+.banner-heading {
     font-family: 'Rollgates';
     font-size: 64px;
     font-weight: 500;
@@ -182,22 +187,24 @@ body {
 }
 
 @media only screen and (max-width: 704px) {
-    .banner-heading{
+    .banner-heading {
         font-size: 50px;
     }
 }
+
 @media only screen and (max-width: 568px) {
-    .banner-heading{
+    .banner-heading {
         font-size: 40px;
     }
 }
+
 @media only screen and (max-width: 470px) {
-    .banner-heading{
+    .banner-heading {
         font-size: 30px;
     }
 }
 
-.banner-para{
+.banner-para {
     font-family: "Abhaya libre";
     font-size: 25px;
     font-weight: 500;
@@ -208,6 +215,19 @@ body {
     color: #c3ac91;
 }
 
+.banner-heading-test {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+    /* Adjust duration as needed */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
