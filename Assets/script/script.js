@@ -45,6 +45,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 closeHamburgerSubmenu.style.display = 'none';
                 openHamburgerSubmenu.style.display = 'block';
             });
+
+            // fade up script
+            const observerOptions = {
+                threshold: 0.1 // Adjust this value as needed
+            };
+        
+            const fadeElements = document.querySelectorAll('.fade-up');
+        
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target); // Stop observing the element after it is in view
+                    }
+                });
+            }, observerOptions);
+        
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
         });
 
 
