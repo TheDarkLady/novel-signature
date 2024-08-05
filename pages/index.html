@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="../assets/script/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/script/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- style for to customize tailwind -->
     <script>
@@ -17,7 +21,7 @@
             theme: {
                 extend: {
                     colors: {
-                        bgColor: "#e8e1d6",
+                        themeColor: "#e8e1d6",
                         color: "#000",
                         white: "#fff"
                     },
@@ -32,6 +36,8 @@
 </head>
 
 <body>
+
+    <!-- header starts -->
     <header class="h-20">
         <nav>
             <!-- navbar for large screens starts -->
@@ -140,11 +146,48 @@
             <!-- navbbar for small screens ends   -->
         </nav>
     </header>
-    <div class="h-screen">
-        <div class="img-container h-screen">
+
+    <!-- header ends -->
+
+    <!-- Banner starts -->
+
+
+    <div class="h-screen bg-themeColor flex flex-col justify-center items-center">
+        <div>
+            <video autoplay muted controls class="max-w-screen-lg w-full">
+                <source src="https://framerusercontent.com/assets/zoqbmzHz5tzm0KPK9Ln16WMo4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">
+        <div class="flex flex-col justify-center items-center p-5">
+            <h1 class="banner-heading text-center">Novel Signature Homes</h1>
+            <p class="banner-para">Designed for You, Built to Last…</p>
+        </div>
+
+        <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center w-[80%]">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center p-5 gap-x-5 gap-y-5 min-w-full lg:min-w-[80%]">
+                <div class="relative w-full ">
+                    <input type="search" placeholder="Search by Address, City, or Zip" class="p-2.5 pl-10 w-full home-search-bar"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#c3ac91" class="absolute left-3 top-1/2 transform -translate-y-1/2 size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center items-center gap-x-5 p-5 mb-5 lg:mb-0">
+                <button class="text-white bg-black px-5 py-2.5 flex flex-row gap-x-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                      </svg>                      
+                    <span>Filters</span></button>
+                <button class="text-white bg-black px-5 py-2.5">Search</button>
+            </div>
         </div>
     </div>
-    <div class="h-screen bg-bgColor"></div>
+    </div>
+
+    <!-- Banner ends -->
+    <div class="h-screen"></div>
     <div class="h-screen"></div>
 
     <footer class="bg-black footer p-2.5">
@@ -155,7 +198,7 @@
             </div>
             <div class="flex flex-col  w-full md:w-full lg:w-1/2 flex-column items-center md:items-center lg:items-start justify-center gap-y-5 md:gap-y-5 lg:gap-x-5">
                 <div class="w-2/5 p-2.5">
-                    <h4 class="text-white flex justify-start text-30px font-semibold border-b border-white">
+                    <h4 class="footer-contact-us text-white flex justify-start  font-semibold border-b border-white">
                         Contact US</h4>
                 </div>
                 <div class="flex flex-col md:flex-col lg:flex-row gap-y-2 md:gap-y-2  lg:gap-x-5 w-auto">
@@ -178,5 +221,7 @@
 
     </footer>
 </body>
-
+<script>
+    AOS.init();
+</script>
 </html>
