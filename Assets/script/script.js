@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    AOS.init();
+    
     //  script for header on scroll backgronud blur starts
             const header = document.getElementsByTagName('header')[0];
 
