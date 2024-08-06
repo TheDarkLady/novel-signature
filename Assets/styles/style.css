@@ -1,70 +1,55 @@
 /* Fonts  */
 
 /* Adding Abhaya libre font  starts*/
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff) format('woff');
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-bold-webfont.woff2) format('woff2');
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-extrabold-webfont.woff) format('woff');
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-extrabold-webfont.woff2) format('woff2');
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff) format('woff');
     font-weight: 500;
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff2) format('woff2');
     font-weight: 500;
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-regular-webfont.woff) format('woff');
 }
-
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-regular-webfont.woff2) format('woff2');
 }
-
 /* Adding Abhaya libre font  ends */
 
 /* Adding Rollgates font  starts */
-
 @font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff) format('woff');
     font-weight: 500;
 }
-
 @font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff2) format('woff2');
     font-weight: 500;
 }
-
 /* Adding Rollgates font  ends  */
-
 /* Fonts */
-
-
 
 /* header styles starts */
 header {
@@ -74,48 +59,38 @@ header {
     width: 100%;
     background-color: #e8e1d6;
     transition: background-color 0.3s ease, opacity 0.3s ease;
-
-
+    z-index: 99;
 }
-
 header.scrolled {
     background-color: rgb(255, 255, 255, 0.08) !important;
     opacity: 1;
     backdrop-filter: blur(52px);
 }
-
 .hamburger {
     background-color: #e8e1d6;
 }
-
 #close-hamburger,
 #hamburger-menu {
     display: none;
 }
-
 #open-hamburger {
     display: block;
 }
-
 #close-hamburger-submenu,
 #hamburger-submenu {
     display: none;
 }
-
 ul li {
     display: inline-block;
     position: relative;
 }
-
 ul li a {
     display: block;
 }
-
 ul li ul.dropdown li {
     display: block;
     padding: 5px 10px;
 }
-
 ul li ul.dropdown {
     width: 200px;
     padding: 10px;
@@ -127,35 +102,27 @@ ul li ul.dropdown {
     font-family: "Abhaya libre";
     display: none;
 }
-
 ul li a:hover {
     border: #e8e1d6;
 }
-
 ul li:hover ul.dropdown {
     display: block;
 
 }
-
-
-
 /* header styles ends */
 
 /* Footer styles starts */
 .footer {
     min-height: 250px;
 }
-
 .footer-contact-us {
     font-size: 30px;
 }
-
 @media screen and (max-width: 431px) {
     .footer-contact-us {
         font-size: 25px;
     }
 }
-
 /* Footer styles ends */
 
 
@@ -165,19 +132,16 @@ ul li:hover ul.dropdown {
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Abhaya libre';
     font-weight: bold;
 }
-
 .img-container {
     background-image: url("https://noveloffice.in/wp-content/uploads/2024/04/coustomizedofficebg-ezgif-scaled.webp");
     background-size: cover;
 }
 
 /* banner styles statrts */
-
 .banner-heading {
     font-family: 'Rollgates';
     font-size: 64px;
@@ -185,52 +149,203 @@ body {
     letter-spacing: 2px;
     color: #000;
 }
-
-@media only screen and (max-width: 704px) {
-    .banner-heading {
-        font-size: 50px;
-    }
-}
-
-@media only screen and (max-width: 568px) {
-    .banner-heading {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .banner-heading {
-        font-size: 30px;
-    }
-}
-
 .banner-para {
     font-family: "Abhaya libre";
     font-size: 25px;
     font-weight: 500;
     color: #5b4f40cc;
 }
-
+@media only screen and (max-width: 704px) {
+    .banner-heading {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .banner-heading {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .banner-heading {
+        font-size: 30px;
+    }
+    .banner-para{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 373px) {
+    .banner-heading {
+        font-size: 25px;
+    }
+    .banner-para{
+        font-size: 16px;
+    }
+}
 .home-search-bar::placeholder {
     color: #c3ac91;
 }
-
-.banner-heading-test {
+.fade-up {
     opacity: 0;
     transform: translateY(50px);
-    animation: slideIn 1s forwards;
-    /* Adjust duration as needed */
+    transition: opacity 1s, transform 1s;
 }
-
-@keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-
-
 /* banner styles ends */
 
+/* Timeless section styles starts */
+.timeless-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000;
+}
+.timeless-para{
+    font-family: 'Abhaya libre';
+    font-size: 25px;
+    font-weight: 500;
+}
+@media only screen and (max-width:937px){
+    .timeless-heading{
+        font-size: 40px;
+    }
+    .timeless-para{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .timeless-heading {
+        font-size: 30px;
+    }
+    .timeless-para{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .timeless-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .timeless-heading { 
+        font-size: 20px;
+    }
+    .timeless-para{
+        font-size: 14px;
+    }
+}
+/* Timeless section styles ends */
+
+/* Quality section styles starts */
+.quality-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+    border-bottom: 1px solid #5b4f40cc;
+}
+.qulity-card{
+    /* border-radius: 30px; */
+    border-right: 1px solid #5b4f40cc;
+}
+.qulity-card-heading{
+    font-size: 'Abhaya libre';
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.qulity-card-para{
+    font-size: 'Abhaya libre';
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+@media only screen and (max-width:937px){
+    .quality-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .quality-heading {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .quality-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .quality-heading { 
+        font-size: 20px;
+    }
+}
+/* Quality section styles ends */
+
+/* Feature listing section starts  */
+.feature-listing-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+@media only screen and (max-width:937px){
+    .feature-listing-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .feature-listing-heading {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .feature-listing-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .feature-listing-heading { 
+        font-size: 20px;
+    }
+}
+/* Feature listing section ends  */
+
+/* signature homes near you section starts */
+
+.signature-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+    border-bottom: 1px solid #0a0907;
+}
+@media only screen and (max-width:937px){
+    .signature-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .signature-heading {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .signature-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .signature-heading { 
+        font-size: 20px;
+    }
+}
+/* signature homes near you section ends */
 /* body styles ends */
