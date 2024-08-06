@@ -18,6 +18,7 @@
                 extend: {
                     colors: {
                         themeColor: "#e8e1d6",
+                        featureListing:"#c1ac93",
                         color: "#000",
                         white: "#fff"
                     },
@@ -151,13 +152,11 @@
             <!-- navbbar for small screens ends   -->
         </nav>
     </header>
-
+    <div class="h-[80px] bg-themeColor"></div>
     <!-- header ends -->
 
     <!-- Banner starts -->
-
-
-    <div class="h-screen bg-themeColor flex flex-col justify-center items-center">
+    <div class="bg-themeColor flex flex-col justify-center items-center">
         <div>
             <video autoplay muted controls class="max-w-screen-lg w-full">
                 <source src="https://framerusercontent.com/assets/zoqbmzHz5tzm0KPK9Ln16WMo4.mp4" type="video/mp4">
@@ -166,12 +165,11 @@
         </div>
         <div>
             <div class="flex flex-col justify-center items-center p-5">
-                <h3 data-aos="fade-up" data-aos-duration="1000" class="aos-init aos-animate">RENT OFFICE SPACE WITH</h3>
-                <h1 class="banner-heading text-center banner-heading-test">Novel Signature Homes</h1>
-                <p class="banner-para">Designed for You, Built to Last…</p>
+                <h1 class="banner-heading text-center fade-up">Novel Signature Homes</h1>
+                <p class="banner-para fade-up">Designed for You, Built to Last…</p>
             </div>
 
-            <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center w-[80%]">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center w-auto fade-up">
                 <div
                     class="flex flex-col md:flex-col lg:flex-row justify-center items-center p-5 gap-x-5 gap-y-5 min-w-full lg:min-w-[80%]">
                     <div class="relative w-full ">
@@ -197,11 +195,102 @@
             </div>
         </div>
     </div>
-
     <!-- Banner ends -->
-    <div class="h-screen"></div>
-    <div class="h-screen"></div>
 
+    <!-- Timeless comfort starts -->
+    <div class="h-screen flex flex-col justify-center items-center">
+        <div class="mx-5 lg:mx-auto my-5 max-w-full lg:max-w-[80%] flex flex-col justify-center items-center gap-y-10">
+            <div class="flex flex-col justify-center items-center">
+                <h2 class="timeless-heading text-center mb-2.5 fade-up">Timeless Comfort in Every Detail</h2>
+        <p class="timeless-para text-justify fade-up">We believe in creating more than just houses; we create homes. Meticulously designed to bring you comfort, beauty, and a sense of peace.  Welcome to a home that truly understands you.</p>
+            </div>
+       <div class="flex flex-row justify-center items-center">
+        <button class="text-white bg-black px-5 py-2.5 fade-up">
+            About Us
+        </button>
+       </div>
+        </div>
+    </div>
+    <!-- Timeless comfort ends -->
+
+    <!-- Quality transparency and innovation section starts -->
+    <div class="h-screen bg-themeColor flex flex-col justify-center items-center">
+        <div class="mx-5 lg:mx-auto my-5 gap-y-10 flex flex-col justify-center items-center max-w-full lg:max-w-[90%]">
+            <div>
+                <h2 class="quality-heading text-center fade-up">Quality transparency and innovation</h2>
+            </div>
+            <div class="max-w-full flex flex-col md:flex-col lg:flex-row">
+                <div class="flex flex-col justify-center items-center gap-y-5 qulity-card p-5">
+                    <h3 class="qulity-card-heading fade-up">Promising Quality:</h3>
+                    <p class="qulity-card-para fade-up">We believe that every home deserves the finest craftsmanship. From the foundation to the finishing touches, we use only premium materials and employ skilled artisans to deliver unparalleled quality.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-y-5 qulity-card p-5">
+                    <h3 class="qulity-card-heading fade-up">Innovative Floor Plans: </h3>
+                    <p class="qulity-card-para fade-up">Our designs are thoughtfully crafted to maximize space and functionality. Experience modern living with our innovative floor plans that cater to diverse lifestyles and evolving needs.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-y-5 p-5">
+                    <h3 class="qulity-card-heading fade-up">Transparent Process:</h3>
+                    <p class="qulity-card-para fade-up">We value open communication and trust. Our transparent building process keeps you informed every step of the way, allowing you to actively participate in creating your dream home.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Quality transparency and innovation section ends -->
+
+    <!-- Feature listing section starts -->
+    <div class="h-screen bg-featureListing flex flex-col justify-center items-center">
+        <div class="mx-5 lg:mx-auto my-5 gap-y-10 flex flex-col justify-center items-center max-w-full lg:max-w-[90%]">
+            <div>
+                <h2 class="feature-listing-heading text-center fade-up">Featured Listings</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Feature listing section ends -->
+
+
+    <!-- Signature homes near you section starts -->
+
+    <div class="h-screen bg-themeColor flex flex-col justify-start items-start p-5">
+        <div class="mx-5  my-5 gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
+            <div class="px-5">
+                <h2 class="signature-heading text-center fade-up in-view">Signature homes near you</h2>
+            </div>
+            <div class="flex flex-col md:flex-row lg:flex-row justify-start items-start w-full fade-up in-view">
+                <div
+                    class="flex flex-col md:flex-col lg:flex-row justify-center items-center p-5 gap-x-5 gap-y-5 min-w-full md:min-w-[80%] lg:min-w-[80%]">
+                    <div class="relative w-full ">
+                        <input type="search" placeholder="Search by Address, City, or Zip"
+                            class="p-2.5 pl-10 w-full home-search-bar" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="#c3ac91" class="absolute left-3 top-1/2 transform -translate-y-1/2 size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-x-5 p-5 mb-5 md:mb-0 lg:mb-0">
+                    <button class="text-white bg-black px-5 py-2.5 flex flex-row gap-x-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                        </svg>
+                        <span>Filters</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2400591720557!2d77.6972584741201!3d12.956484915211428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae123349706bff%3A0x9844240fd0d1c31b!2sXM4X%2BHWX%20Novel%20MSR%20Building%2C%20Subbaiah%20Reddy%20Colony%2C%20Marathahalli%20Village%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1722890624197!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Signature homes near you section ends -->
+    <!-- Footer section starts -->
     <footer class="bg-black footer p-2.5">
         <div class="flex flex-col md:flex-col lg:flex-row p-2.5 justify-center items-center">
             <div class="w-1/2 flex items-center justify-around">
@@ -233,6 +322,8 @@
         </div>
 
     </footer>
+
+    <!-- Footer section ends -->
 </body>
 <script>
     AOS.init();
