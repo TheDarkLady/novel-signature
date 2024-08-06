@@ -18,9 +18,10 @@
                 extend: {
                     colors: {
                         themeColor: "#e8e1d6",
-                        featureListing:"#c1ac93",
+                        featureListing: "#c1ac93",
                         color: "#000",
-                        white: "#fff"
+                        white: "#fff",
+                        halfWhite: "#e7e6d1"
                     },
                     fontSize: {
                         '18px': '18px',
@@ -202,13 +203,17 @@
         <div class="mx-5 lg:mx-auto my-5 max-w-full lg:max-w-[80%] flex flex-col justify-center items-center gap-y-10">
             <div class="flex flex-col justify-center items-center">
                 <h2 class="timeless-heading text-center mb-2.5 fade-up">Timeless Comfort in Every Detail</h2>
-        <p class="timeless-para text-justify fade-up">We believe in creating more than just houses; we create homes. Meticulously designed to bring you comfort, beauty, and a sense of peace.  Welcome to a home that truly understands you.</p>
+                <p class="timeless-para text-justify fade-up">We believe in creating more than just houses; we create
+                    homes. Meticulously designed to bring you comfort, beauty, and a sense of peace. Welcome to a home
+                    that truly understands you.</p>
             </div>
-       <div class="flex flex-row justify-center items-center">
-        <button class="text-white bg-black px-5 py-2.5 fade-up">
-            About Us
-        </button>
-       </div>
+            <div class="flex flex-row justify-center items-center">
+                <a href="./about.html">
+                    <button class="text-white bg-black px-5 py-2.5 fade-up" href="./about.html">
+                        About Us
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
     <!-- Timeless comfort ends -->
@@ -220,26 +225,31 @@
                 <h2 class="quality-heading text-center fade-up">Quality transparency and innovation</h2>
             </div>
             <div class="max-w-full flex flex-col md:flex-col lg:flex-row">
-                <div class="flex flex-col justify-center items-center gap-y-5 qulity-card p-5">
+                <div class="flex flex-col justify-center items-center gap-y-5 quality-card p-5">
                     <h3 class="qulity-card-heading fade-up">Promising Quality:</h3>
-                    <p class="qulity-card-para fade-up">We believe that every home deserves the finest craftsmanship. From the foundation to the finishing touches, we use only premium materials and employ skilled artisans to deliver unparalleled quality.
+                    <p class="qulity-card-para fade-up">We believe that every home deserves the finest craftsmanship.
+                        From the foundation to the finishing touches, we use only premium materials and employ skilled
+                        artisans to deliver unparalleled quality.
                     </p>
                 </div>
-                <div class="flex flex-col justify-center items-center gap-y-5 qulity-card p-5">
+                <div class="flex flex-col justify-center items-center gap-y-5 quality-card p-5">
                     <h3 class="qulity-card-heading fade-up">Innovative Floor Plans: </h3>
-                    <p class="qulity-card-para fade-up">Our designs are thoughtfully crafted to maximize space and functionality. Experience modern living with our innovative floor plans that cater to diverse lifestyles and evolving needs.
+                    <p class="qulity-card-para fade-up">Our designs are thoughtfully crafted to maximize space and
+                        functionality. Experience modern living with our innovative floor plans that cater to diverse
+                        lifestyles and evolving needs.
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-y-5 p-5">
                     <h3 class="qulity-card-heading fade-up">Transparent Process:</h3>
-                    <p class="qulity-card-para fade-up">We value open communication and trust. Our transparent building process keeps you informed every step of the way, allowing you to actively participate in creating your dream home.
+                    <p class="qulity-card-para fade-up">We value open communication and trust. Our transparent building
+                        process keeps you informed every step of the way, allowing you to actively participate in
+                        creating your dream home.
                     </p>
                 </div>
 
             </div>
         </div>
     </div>
-
     <!-- Quality transparency and innovation section ends -->
 
     <!-- Feature listing section starts -->
@@ -254,15 +264,15 @@
 
 
     <!-- Signature homes near you section starts -->
-
-    <div class="h-screen bg-themeColor flex flex-col justify-start items-start p-5">
-        <div class="mx-5  my-5 gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
+    <div class="h-full lg:h-screen bg-themeColor flex flex-col justify-start items-start px-5 py-10 lg:p-5">
+        <div
+            class="gap-y-5 md:gap-y-10 lg:gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
             <div class="px-5">
-                <h2 class="signature-heading text-center fade-up in-view">Signature homes near you</h2>
+                <h2 class="signature-heading text-center fade-up in-view fade-down">Signature homes near you</h2>
             </div>
             <div class="flex flex-col md:flex-row lg:flex-row justify-start items-start w-full fade-up in-view">
                 <div
-                    class="flex flex-col md:flex-col lg:flex-row justify-center items-center p-5 gap-x-5 gap-y-5 min-w-full md:min-w-[80%] lg:min-w-[80%]">
+                    class="flex flex-col md:flex-col lg:flex-row justify-center items-center p-2.5 md:p-5 lg:p-5 gap-x-5 gap-y-5 min-w-full md:min-w-[80%] lg:min-w-[80%]">
                     <div class="relative w-full ">
                         <input type="search" placeholder="Search by Address, City, or Zip"
                             class="p-2.5 pl-10 w-full home-search-bar" />
@@ -273,7 +283,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="flex flex-row justify-center items-center gap-x-5 p-5 mb-5 md:mb-0 lg:mb-0">
+                <div class="flex flex-row justify-center items-center gap-x-5 p-2.5 md:p-5 lg:p-5 mb-0 md:mb-0 lg:mb-0">
                     <button class="text-white bg-black px-5 py-2.5 flex flex-row gap-x-1.5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -285,11 +295,297 @@
             </div>
         </div>
         <div class="w-full">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2400591720557!2d77.6972584741201!3d12.956484915211428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae123349706bff%3A0x9844240fd0d1c31b!2sXM4X%2BHWX%20Novel%20MSR%20Building%2C%20Subbaiah%20Reddy%20Colony%2C%20Marathahalli%20Village%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1722890624197!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="p-2.5 md:p-5 lg:p-5"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2400591720557!2d77.6972584741201!3d12.956484915211428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae123349706bff%3A0x9844240fd0d1c31b!2sXM4X%2BHWX%20Novel%20MSR%20Building%2C%20Subbaiah%20Reddy%20Colony%2C%20Marathahalli%20Village%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1722890624197!5m2!1sen!2sin"
+                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-
     <!-- Signature homes near you section ends -->
+
+    <!-- Take a virtual tour section starts -->
+    <div class="h-full lg:h-screen bg-white flex flex-col justify-center items-center mb-5 gap-y-10 px-5 py-10 lg:p-5">
+        <div class="mx-5 lg:mx-auto my-5 gap-y-10 flex flex-col justify-center items-center max-w-full lg:max-w-[70%]">
+            <h1 class="virtual-tour-heading text-center fade-down">Take a virtual tour</h1>
+            <p class="virtual-tour-para text-left fade-up">
+                Experience the future of home tours with our interactive virtual reality walkthroughs. Immerse yourself
+                in every corner of our properties, exploring each room in detail and interacting with key features.
+                Discover your dream home from the comfort of your own space.
+            </p>
+        </div>
+        <div class="max-w-full flex flex-col md:flex-col lg:flex-row">
+            <div class="flex flex-col justify-center items-center gap-y-5 p-5">
+                <img src="../assets/images/virtual-tour-img1.jpg" alt="" style="width: 467px; height: 278px;">
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-5 p-5">
+                <img src="../assets/images/virtual-tour-img2.jpg" alt="" style="width: 467px; height: 278px;">
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-5 p-5">
+                <img src="../assets/images/virtual-tour-img3.jpg" alt="" style="width: 467px; height: 278px;">
+            </div>
+
+        </div>
+        <div class="flex flex-row justify-center items-center">
+            <a href="./about.html">
+                <button class="text-white bg-black px-5 py-2.5 fade-up" href="./about.html">
+                    Load More
+                </button>
+            </a>
+        </div>
+
+    </div>
+    <!-- Take a virtual tour section ends -->
+
+    <!-- Walkthrough our properties section starts -->
+    <div
+        class="h-full lg:h-screen bg-featureListing flex flex-col justify-center items-center gap-y-10 px-5 py-10 lg:p-5">
+        <div
+            class="gap-y-5 md:gap-y-10 lg:gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
+            <div class="px-5">
+                <h2 class="Walkthrough-heading text-center fade-up in-view fade-down">Walkthrough Our Properties</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-y-8 lg:gap-x-5 w-full  fade-up">
+                <div class="w-full lg:w-[50%]">
+                    <div class="w-full px-5 flex flex-row justify-center items-center">
+                        <iframe class="w-full h-[300px] md:h-[420px] lg:h-[420px]"
+                            src="https://www.youtube.com/embed/y9j-BL5ocW8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[50%]">
+                    <div
+                        class="w-full px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 justify-items-center items-center">
+                        <iframe class="h-[200px] md:h-[300px] lg:h-[200px] w-[350px] md:w-full lg:w-full"
+                            src="https://www.youtube.com/embed/y9j-BL5ocW8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <iframe class="h-[200px] md:h-[300px] lg:h-[200px] w-[350px] md:w-full lg:w-full"
+                            src="https://www.youtube.com/embed/y9j-BL5ocW8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <iframe class="h-[200px] md:h-[300px] lg:h-[200px] w-[350px] md:w-full lg:w-full"
+                            src="https://www.youtube.com/embed/y9j-BL5ocW8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <iframe class="h-[200px] md:h-[300px] lg:h-[200px] w-[350px] md:w-full lg:w-full"
+                            src="https://www.youtube.com/embed/y9j-BL5ocW8" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+            <div
+                class="w-full flex flex-col md:flex-row lg:flex-row justify-between items-center gap-y-10 md:gap-x-5 lg:gap-x-5">
+                <div class="w-full md:w-[50%] lg:w-[50%]">
+                    <p class="Walkthrough-para text-left px-5">Want to see more homes? Check out our channel and stay
+                        updated on our latest listings</p>
+                </div>
+                <div class="flex flex-row justify-right">
+                    <p class="Walkthrough-para text-right px-5">Subscribe >></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Walkthrough our properties section ends -->
+
+    <!-- luxury homes section starts -->
+    <div class="h-full lg:h-screen bg-themeColor flex flex-col justify-center items-center gap-y-10 px-5 py-10 lg:p-5">
+        <div
+            class="gap-y-5 md:gap-y-10 lg:gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
+            <div class="px-5">
+                <h2 class="signature-heading text-center fade-up in-view fade-down">Luxury homes Acquired & Adored</h2>
+            </div>
+            <div
+                class="flex flex-col md:flex-col lg:flex-row justify-center items-center gap-y-8 md:gap-y-8 lg:gap-x-5">
+                <div class="w-full lg:w-[50%] fade-up">
+                    <div class="w-full px-5 flex flex-col justify-center items-center gap-y-5">
+                        <div>
+                            <img src="../assets/images/luxury-homes-img1.webp" alt="">
+                        </div>
+                        <div class="w-full flex flex-row justify-between items-center">
+                            <div>
+                                <p class="virtual-tour-para text-left">7310 Birdview, Austin Texas</p>
+                                <p class="virtual-tour-para text-left">$14,995,000</p>
+                            </div>
+                            <div>
+                                <a href="./about.html">
+                                    <button class="text-white bg-black px-5 py-2.5" href="./about.html">
+                                        View Listing
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full lg:w-[50%] fade-up">
+                    <div class="w-full px-5 flex flex-col justify-center items-center gap-y-5">
+                        <div>
+                            <img src="../assets/images/luxury-homes-img1.webp" alt="">
+                        </div>
+                        <div class="w-full flex flex-row justify-between items-center">
+                            <div>
+                                <p class="virtual-tour-para text-left">7310 Birdview, Austin Texas</p>
+                                <p class="virtual-tour-para text-left">$14,995,000</p>
+                            </div>
+                            <div>
+                                <a href="./about.html">
+                                    <button class="text-white bg-black px-5 py-2.5" href="./about.html">
+                                        View Listing
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center">
+            <a href="./about.html">
+                <button class="text-white bg-black px-5 py-2.5 fade-up" href="../pages/sold-properties.html">
+                    View All Listings
+                </button>
+            </a>
+        </div>
+
+    </div>
+    <!-- luxury homes section ends -->
+
+    <!-- testimonial section starts -->
+    <div class="h-full lg:h-screen bg-white flex flex-col justify-center items-center gap-y-10 px-5 py-10 lg:p-5">
+        <div
+            class="gap-y-5 md:gap-y-10 lg:gap-y-10 flex flex-col justify-start items-start w-full max-w-full lg:max-w-[90%]">
+            <div class="px-5">
+                <h2 class="testimonial-heading text-center fade-up in-view fade-down">Listen To What Others Have To Say
+                    About Us</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 p-5">
+                <div
+                    class="flex flex-col md:flex-row lg:flex-row justify-center items-start md:items-center lg:items-center gap-y-5 md:gap-x-5 lg:gap-x-5 fade-right in-rightview">
+                    <div class="w-auto md:w-[40%] lg:w-[40%] bg-featureListing flex justify-end pl-5">
+                        <img src="../assets/images/clients-img1.jpg" alt="" class="h-[217px] w-[266px]">
+                    </div>
+                    <div
+                        class="w-auto md:w-[60%] lg:w-[60%] h-full flex flex-col justify-around lg:justify-between items-left">
+                        <div>
+                            <h3 class="testimonial-card-heading">Liam Peterson</h3>
+                            <p class="testimonial-card-subheading">Designation or any information</p>
+                        </div>
+                        <div>
+                            <p class="testimonial-card-description">" We're so happy with our new home from Novel
+                                Signature Homes! The quality is outstanding, and the design fits our lifestyle </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row lg:flex-row justify-center items-start md:items-center lg:items-center gap-y-5 md:gap-x-5 lg:gap-x-5 fade-right in-rightview">
+                    <div class="w-auto md:w-[40%] lg:w-[40%] bg-featureListing flex justify-end pl-5">
+                        <img src="../assets/images/clients-img2.jpg" alt="" class="h-[217px] w-[266px]">
+                    </div>
+                    <div
+                        class="w-auto md:w-[60%] lg:w-[60%] h-full flex flex-col justify-around lg:justify-between items-left">
+                        <div>
+                            <h3 class="testimonial-card-heading">Liam Peterson</h3>
+                            <p class="testimonial-card-subheading">Designation or any information</p>
+                        </div>
+                        <div>
+                            <p class="testimonial-card-description">" We're so happy with our new home from Novel
+                                Signature Homes! The quality is outstanding, and the design fits our lifestyle </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row lg:flex-row justify-center items-start md:items-center lg:items-center gap-y-5 md:gap-x-5 lg:gap-x-5 fade-right in-rightview">
+                    <div class="w-auto md:w-[40%] lg:w-[40%] bg-featureListing flex justify-end pl-5">
+                        <img src="../assets/images/clients-img3.jpg" alt="" class="h-[217px] w-[266px]">
+                    </div>
+                    <div
+                        class="w-auto md:w-[60%] lg:w-[60%] h-full flex flex-col justify-around lg:justify-between items-left">
+                        <div>
+                            <h3 class=" testimonial-card-heading">Liam Peterson</h3>
+                            <p class=" testimonial-card-subheading">Designation or any information</p>
+                        </div>
+                        <div>
+                            <p class=" testimonial-card-description">" We're so happy with our new home from Novel
+                                Signature Homes! The quality is outstanding, and the design fits our lifestyle </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row lg:flex-row justify-center items-start md:items-center lg:items-center gap-y-5 md:gap-x-5 lg:gap-x-5 fade-right in-rightview">
+                    <div class="w-auto md:w-[40%] lg:w-[40%] bg-featureListing flex justify-end pl-5">
+                        <img src="../assets/images/clients-img4.jpg" alt="" class="h-[217px] w-[266px]">
+                    </div>
+                    <div
+                        class="w-auto md:w-[60%] lg:w-[60%] h-full flex flex-col justify-around lg:justify-between items-left">
+                        <div>
+                            <h3 class=" testimonial-card-heading">Liam Peterson</h3>
+                            <p class=" testimonial-card-subheading">Designation or any information</p>
+                        </div>
+                        <div>
+                            <p class=" testimonial-card-description">" We're so happy with our new home from Novel
+                                Signature Homes! The quality is outstanding, and the design fits our lifestyle </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- testimonial section ends -->
+
+    <!-- contact us section starts -->
+    <div class="h-full lg:h-screen bg-featureListing flex flex-col justify-center items-center gap-y-10 px-5 py-10 lg:p-5">
+        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-center items-center">
+            <div class="max-w-[80%] lg:max-w-[50%] flex flex-col justify-start items-center gap-y-5 contact-us mx-auto p-5 fade-down">
+                <div class="w-full">
+                    <h3 class="contact-us-heading mb-2.5">Let's Find Your Dream Home Together</h3>
+                    <p class="contact-us-para">The perfect home is closer than you think. We're here to help you find it!</p>
+                </div>
+                <div>
+                    <ol class="list-disc ">
+                        <li class="text-white contact-us-list">Our team will personally assist you through every step of your home-buying journey.</li>
+                        <li class="text-white contact-us-list">Explore and discover a wide range of properties tailored to fit your lifestyle.</li>
+                        <li class="text-white contact-us-list">Reach out to us for any questions or assistance and stay connected</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="w-[80%] lg:w-[50%] p-5 fade-up">
+                <form class="p-6 rounded-lg  w-full">
+                    <div class="mb-4">
+                        <label for="name" class="block text-white mb-2 font-medium">Name:</label>
+                        <input type="text" id="name" name="name" class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-white mb-2 font-medium">Email:</label>
+                        <input type="email" id="email" name="email" class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-white mb-2 font-medium">Message:</label>
+                        <textarea id="message" name="message" rows="4" class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-black border-black hover:bg-featureListing text-white font-medium  py-2 px-4  focus:outline-none focus:shadow-outline">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- contact us section ends -->
+
     <!-- Footer section starts -->
     <footer class="bg-black footer p-2.5">
         <div class="flex flex-col md:flex-col lg:flex-row p-2.5 justify-center items-center">

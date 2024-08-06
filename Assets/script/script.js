@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('in-view');
+                        entry.target.classList.add('in-upview');
                         observer.unobserve(entry.target); // Stop observing the element after it is in view
                     }
                 });
@@ -64,6 +64,38 @@ document.addEventListener('DOMContentLoaded', function () {
         
             fadeElements.forEach(element => {
                 observer.observe(element);
+            });
+
+            // fade down script
+            const fadeDownElements = document.querySelectorAll('.fade-down');
+        
+            const fadeDownObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-downview');
+                        observer.unobserve(entry.target); // Stop observing the element after it is in view
+                    }
+                });
+            }, observerOptions);
+        
+            fadeDownElements.forEach(element => {
+                fadeDownObserver.observe(element);
+            });
+
+            // fade right script
+            const fadeRightElements = document.querySelectorAll('.fade-right');
+        
+            const fadeRightObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-rightview');
+                        observer.unobserve(entry.target); // Stop observing the element after it is in view
+                    }
+                });
+            }, observerOptions);
+        
+            fadeRightElements.forEach(element => {
+                fadeRightObserver.observe(element);
             });
         });
 

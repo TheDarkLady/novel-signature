@@ -187,9 +187,18 @@ body {
 .fade-up {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-.fade-up.in-view {
+.fade-up.in-upview {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.fade-down.in-downview {
     opacity: 1;
     transform: translateY(0);
 }
@@ -248,9 +257,19 @@ body {
     color: #0a0907;
     border-bottom: 1px solid #5b4f40cc;
 }
-.qulity-card{
+.quality-card{
     /* border-radius: 30px; */
     border-right: 1px solid #5b4f40cc;
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .quality-card{
+        /* border-radius: 30px; */
+        border-right: none;
+        border-bottom: 1px solid #5b4f40cc;
+    }
+    
 }
 .qulity-card-heading{
     font-size: 'Abhaya libre';
@@ -348,4 +367,223 @@ body {
     }
 }
 /* signature homes near you section ends */
+
+/* Take a virtual tour section starts */
+.virtual-tour-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #0a0907;
+    border-bottom: 1px solid #0a0907;
+}
+.virtual-tour-para{
+    font-family: 'Abhaya libre';
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0907;
+}
+@media only screen and (max-width:937px){
+    .virtual-tour-heading{
+        font-size: 40px;
+    }
+    .virtual-tour-para{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .virtual-tour-heading {
+        font-size: 30px;
+    }
+    .virtual-tour-para{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .virtual-tour-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .virtual-tour-heading { 
+        font-size: 20px;
+    }
+    .virtual-tour-para{
+        font-size: 14px;
+    }
+}
+/* Take a virtual tour section ends */
+
+/* walkthrough properties section starts */
+.Walkthrough-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.Walkthrough-para{
+    font-family: 'Abhaya libre';
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+@media only screen and (max-width:937px){
+    .Walkthrough-heading{
+        font-size: 40px;
+    }
+    .Walkthrough-para{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .Walkthrough-heading {
+        font-size: 30px;
+    }
+    .Walkthrough-para{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .Walkthrough-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .Walkthrough-heading { 
+        font-size: 20px;
+    }
+    .Walkthrough-para{
+        font-size: 14px;
+    }
+}
+/* walkthrough properties section ends */
+
+/* luxury homes section starts */
+
+/* luxury homes section ends */
+
+/* testimonials section starts */
+.testimonial-heading{
+    font-family: 'Rollgates';    
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+    border-bottom: 1px solid #0a0907;
+}
+.testimonial-card-heading{
+    font-family: "Abhaya Libre";
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a0907;
+}
+.testimonial-card-subheading{
+    font-family: "Abhaya Libre";
+    font-size: 20px;
+    font-weight: 500;
+    color: #5b4f40cc;
+}
+.testimonial-card-description{
+    font-family: "Abhaya Libre";
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a0907;
+}
+@media only screen and (max-width:1148px){
+    .testimonial-heading{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .testimonial-heading {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 843px) {
+    .testimonial-heading { 
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .testimonial-heading { 
+        font-size: 30px;
+    }
+}
+.fade-right {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.fade-right.in-rightview {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* testimonials section ends */
+
+/*  contact us starts*/
+.contact-us{
+    border-right: 1px solid #5b4f4026;
+    border-bottom: none;
+}
+@media only screen and (max-width: 1023px) {
+    .contact-us {
+        border-right: none;
+        border-bottom: 1px solid #5b4f4026;
+    }
+}
+.contact-us-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.contact-us-para{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact-us-list{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+@media only screen and (max-width:937px){
+    .contact-us-heading{
+        font-size: 40px;
+    }
+    .contact-us-para, .contact-us-list{
+        font-size: 20px;
+    }
+}
+.list-disc li::marker {
+    color: #5b4f40; /* Set the bullet color */
+}
+@media only screen and (max-width: 765px) {
+    .contact-us-heading {
+        font-size: 30px;
+    }
+    .contact-us-para, .contact-us-list{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .contact-us-heading { 
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 508px) {
+    .contact-us-heading { 
+        font-size: 20px;
+    }
+    .contact-us-para, .contact-us-list{
+        font-size: 14px;
+    }
+}
+/* contact us ends */
+
 /* body styles ends */
