@@ -141,6 +141,8 @@ body {
     background-size: cover;
 }
 
+/*********** Home page styles **********/
+
 /* banner styles statrts */
 .banner-heading {
     font-family: 'Rollgates';
@@ -645,5 +647,56 @@ body {
     }
 }
 /* contact us ends */
+
+/********** About us page starts ***********/
+/* Head section starts */
+.head-section-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.about-novel-para{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a0907;
+    letter-spacing: 1px;
+}
+.about-novel-secondpara{
+    font-family: 'Rollgates';
+    font-size: 20px;
+    font-weight: medium;
+    color: #5b4f40;
+    letter-spacing: 1px;
+}
+
+.meet-our-team-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+    border-bottom: 1px solid #fff;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scale-up {
+    animation: scaleUp 1s ease-in-out;
+}
+/* Head section ends */
 
 /* body styles ends */

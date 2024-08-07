@@ -19,11 +19,13 @@
                         featureListing: "#c1ac93",
                         color: "#000",
                         white: "#fff",
-                        halfWhite: "#e7e6d1"
+                        halfWhite: "#e7e6d1",
+                        aboutNovel:"#e7e1d6",
                     },
                     fontSize: {
                         '18px': '18px',
-                        '30px': '30px'
+                        '30px': '30px',
+                        '14px': '14px',
                     }
                 }
             }
@@ -151,7 +153,91 @@
     </header>
     <div class="h-[80px] bg-themeColor"></div>
     <!-- header ends -->
-     
+    
+    <!-- heading section starts -->
+     <div class="bg-featureListing flex flex-col justify-end items-start h-[200px] mx-auto p-5">
+        <div class="max-w-[1200px] w-full flex flex-col justify-center items-start mx-auto fade-down">
+            <h1 class="head-section-heading mx-10">Our Story</h1>
+
+        </div>
+     </div>
+    <!-- heading section ends -->
+
+    <!-- About Novel office section starts -->
+    <div class="h-full bg-aboutNovel">
+        <div class="flex flex-col justify-center items-center w-full">
+            <div class="flex flex-col lg:flex-row w-full fade-up">
+                <div class="w-full lg:w-[50%]">
+                    <img src="../assets/images/our-story-img1.jpg" alt="" class="h-screen">
+                </div>
+                <div class="w-full lg:w-[50%] flex flex-col justify-center items-center p-10 gap-y-5">
+                    <p class="about-novel-para w-full md:w-[80%] lg:w-[80%] ">
+                        <strong>Novel Office</strong> is known for offering the most exquisite office spaces in the commercial real estate market, seamlessly combining creativity, functionality, and innovation. First incorporated in 2008, we are a part of the Novel Group, established in 1993 in Dallas, TX, USA. Our reputation for delivering customized layouts with zero material wastage has set a new industry standard.
+                    </p>
+                    <p class="about-novel-para w-full md:w-[80%] lg:w-[80%]">
+                        Now, <strong>Novel Signature Homes</strong> is set to redefine residential property development by constructing bespoke villas and single-unit luxury homes featuring open-concept designs with the same expertise and enthusiasm. Each residence showcases our unwavering commitment to excellence, meticulously designed to cater to the unique preferences and needs of discerning homeowners.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="flex flex-col lg:flex-row-reverse w-full fade-up">
+                <div class="w-full lg:w-[50%]">
+                    <img src="../assets/images/our-story-img2.jpg" alt="" class="h-screen">
+                </div>
+                <div class="w-full lg:w-[50%] flex flex-col justify-center items-center p-10 gap-y-5">
+                    <p class="about-novel-secondpara w-full md:w-[80%] lg:w-[80%]"">
+                        Driven by a deep passion for creating homes that are more than just living spaces but also experiences, Novel Signature Homes is entering the residential market with a clear vision: creating exclusive retreats. Located in prime locations, our homes offer exceptional curb appeal and are equipped with the latest smart home technology to enhance your living experience. From the initial planning stages to the final touches, each home embodies elegance, innovation, and sustainability. We are committed to inspiring you while promoting sustainable practices, ensuring that your new home is as responsible as it is luxurious.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- About Novel office section ends -->
+
+    <!-- Meet our team section starts  -->
+     <div class="h-full lg:h-screen bg-aboutNovel p-10 flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-y-5">
+            <div class="flex flex-col justify-center items-center w-full max-w-[1200px] mx-auto p-5">
+                <h2 class="meet-our-team-heading mx-10">Meet Our Team</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 w-full max-w-[1200px] mx-auto p-5">
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
+                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
+                        <img src="../assets/images/our-team-img1.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
+                    </div>
+                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
+                        <p class="text-18px">Name</p>
+                        <p class="text-16px font-medium">Designation</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
+                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
+                        <img src="../assets/images/our-team-img2.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
+                    </div>
+                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
+                        <p class="text-18px">Name</p>
+                        <p class="text-16px font-medium">Designation</p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
+                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
+                        <img src="../assets/images/our-team-img3.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
+                    </div>
+                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
+                        <p class="text-18px">Name</p>
+                        <p class="text-16px font-medium">Designation</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+     </div>
+    <!-- Meet our team section ends -->
 
      <!-- contact us section starts -->
      <div
@@ -207,7 +293,7 @@
          </div>
      </div>
     </div>
- <!-- contact us section ends -->
+    <!-- contact us section ends -->
 
     <!-- Footer section starts -->
     <footer class="bg-black footer p-2.5">

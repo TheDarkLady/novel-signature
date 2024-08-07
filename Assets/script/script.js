@@ -98,6 +98,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 fadeRightObserver.observe(element);
             });
 
+            // fade in script
+            const fadeInElements = document.querySelectorAll('.fade-in');
+        
+            const fadeInObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scale-up');
+                        observer.unobserve(entry.target); // Stop observing the element after it is in view
+                    }
+                }); 
+            }, observerOptions);
+        
+            fadeInElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+
 
         });
 
