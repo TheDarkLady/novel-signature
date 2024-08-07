@@ -20,12 +20,10 @@
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff) format('woff');
-    font-weight: 500;
 }
 @font-face {
     font-family: 'Abhaya libre';
     src: url(../fonts/AbhayaLibre/abhayalibre-medium-webfont.woff2) format('woff2');
-    font-weight: 500;
 }
 @font-face {
     font-family: 'Abhaya libre';
@@ -41,12 +39,10 @@
 @font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff) format('woff');
-    font-weight: 500;
 }
 @font-face {
     font-family: 'Rollgates';
     src: url(../fonts/Rollgates/rollgates_luxury-webfont.woff2) format('woff2');
-    font-weight: 500;
 }
 /* Adding Rollgates font  ends  */
 /* Fonts */
@@ -659,6 +655,9 @@ body {
     border-bottom: 1px solid #fff;
 }
 
+/* Head section ends */
+
+/* about novel section starts */
 .about-novel-para{
     font-family: 'Abhaya libre';
     font-size: 20px;
@@ -674,6 +673,9 @@ body {
     letter-spacing: 1px;
 }
 
+/* about novel section ends */
+
+/* meet our team section starts */
 .meet-our-team-heading{
     font-family: 'Rollgates';    
     font-size: 50px;
@@ -697,6 +699,49 @@ body {
 .scale-up {
     animation: scaleUp 1s ease-in-out;
 }
-/* Head section ends */
 
+/* meet our team section ends */
+/**********`About us page ends  **********/
+
+
+/**********`Contact us page starts  **********/
+
+/* Contact us banner section starts */
+.contact-us-banner{
+    background-image: url(../images/cantact-us-bannerimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh
+}
+
+/* Contact us banner section ends */
+
+/* Contact us details section starts */
+.contact-us-para{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    color: #FFf;
+    /* letter-spacing: 1px; */
+}
+
+.get-in-touch-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+}
+
+.get-in-touch-input::placeholder {
+    color: #bbbbbb;
+}
+@media only screen and (max-width: 767px) {
+    .get-in-touch-heading{
+        font-size: 40px;
+    }
+}
+
+/* Contact us details section ends */
+
+/**********`Contact us page ends  **********/
 /* body styles ends */
