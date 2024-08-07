@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
             fadeRightElements.forEach(element => {
                 fadeRightObserver.observe(element);
             });
+
+
         });
 
 

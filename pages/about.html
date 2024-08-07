@@ -3,9 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="../assets/script/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style for to customize tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        themeColor: "#e8e1d6",
+                        featureListing: "#c1ac93",
+                        color: "#000",
+                        white: "#fff",
+                        halfWhite: "#e7e6d1"
+                    },
+                    fontSize: {
+                        '18px': '18px',
+                        '30px': '30px'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>About Page</h1>
+    <!-- header starts -->
+    <header class="h-20">
+        <nav>
+            <!-- navbar for large screens starts -->
+            <div class="hidden md:hidden lg:block ">
+                <ul class="flex items-center justify-center gap-[4vw] h-20">
+                    <li class="flex items-center">
+                        <a class="text-18px " href="./index.html">Home</a>
+                    </li>
+                    <li class="flex items-center h-20">
+                        <a class="text-18px " href="#">Properties</a>
+                        <ul class="text-18px dropdown" href="#">
+                            <li><a class="text-18px " href="./active-listing.html">Active Listing</a></li>
+                            <li><a class="text-18px " href="./sold-properties.html">Sold Properties</a></li>
+                            <li><a class="text-18px " href="./upcoming-homes.html">Upcoming Homes</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-18px " href="./about.html">About</a>
+                    </li>
+                    <li class="flex items-center">
+                        <img class="w-60" src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp"
+                            alt="logo">
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-18px " href="./contact.html">Contact</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-18px " href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="text-18px " href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- navbar for large screens ends -->
+
+            <!-- navbbar for small screens starts   -->
+
+            <div class="hamburger flex flex-col md:flex md:flex-col lg:hidden px-2.5">
+                <div class="flex items-center justify-between py-2.5">
+                    <span class="cursor-pointer">
+                        <img class="w-60" src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp"
+                            alt="logo">
+                    </span>
+                    <!-- toogle button -->
+                    <button id="open-hamburger"
+                        class="inline-flex items-center justify-center m-2.5 h-10 w-10 outline-none focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    </button>
+                    <!-- toogle button -->
+                    <!-- close button -->
+                    <button id="close-hamburger"
+                        class="inline-flex items-center justify-center m-2.5 h-10 w-10 outline-none focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <!-- close button -->
+                </div>
+                <div id="hamburger-menu" class="py-2.5">
+                    <ul class="flex flex-col items-start justify-center gap-[1vw]">
+                        <li class="w-full">
+                            <a class="text-18px " href="./index.html">Home</a>
+                        </li>
+                        <li class="w-full flex flex-row justify-between">
+                            <div>
+                                <a class="text-18px " href="#">Properties</a>
+                            </div>
+                            <button id="open-hamburger-submenu">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </button>
+                            <button id="close-hamburger-submenu">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                                </svg>
+
+                            </button>
+
+                        </li>
+                        <ul id="hamburger-submenu" class="text-18px flex flex-col px-2" href="#">
+                            <li><a class="text-18px " href="./active-listing.html">Active Listing</a></li>
+                            <li><a class="text-18px " href="./sold-properties.html">Sold Properties</a></li>
+                            <li><a class="text-18px " href="./upcoming-homes.html">Upcoming Homes</a></li>
+                        </ul>
+                        <li class="w-full">
+                            <a class="text-18px " href="./about.html">About</a>
+                        </li>
+                        <li class="w-full">
+                            <a class="text-18px " href="./contact.html">Contact</a>
+                        </li>
+                        <li class="w-full">
+                            <a class="text-18px " href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="w-full">
+                            <a class="text-18px " href="./blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- navbbar for small screens ends   -->
+        </nav>
+    </header>
+    <div class="h-[80px] bg-themeColor"></div>
+    <!-- header ends -->
+     
+
+     <!-- contact us section starts -->
+     <div
+     class="h-full lg:h-screen bg-featureListing flex flex-col justify-center items-center gap-y-10 px-5 py-10 lg:p-5">
+     <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-center items-center">
+         <div
+             class="max-w-[80%] lg:max-w-[50%] flex flex-col justify-start items-center gap-y-5 contact-us mx-auto p-5 fade-down">
+             <div class="w-full">
+                 <h3 class="contact-us-heading mb-2.5">Let's Find Your Dream Home Together</h3>
+                 <p class="contact-us-para">The perfect home is closer than you think. We're here to help you find
+                     it!</p>
+             </div>
+             <div>
+                 <ol class="list-disc ">
+                     <li class="text-white contact-us-list">Our team will personally assist you through every step of
+                         your home-buying journey.</li>
+                     <li class="text-white contact-us-list">Explore and discover a wide range of properties tailored
+                         to fit your lifestyle.</li>
+                     <li class="text-white contact-us-list">Reach out to us for any questions or assistance and stay
+                         connected</li>
+                 </ol>
+             </div>
+
+         </div>
+         <div class="w-[80%] lg:w-[50%] p-5 fade-up">
+             <form class="p-6 rounded-lg  w-full">
+                 <div class="mb-4">
+                     <label for="name" class="block text-white mb-2 font-medium">Name:</label>
+                     <input type="text" id="name" name="name"
+                         class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                         required>
+                 </div>
+                 <div class="mb-4">
+                     <label for="email" class="block text-white mb-2 font-medium">Email:</label>
+                     <input type="email" id="email" name="email"
+                         class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                         required>
+                 </div>
+                 <div class="mb-4">
+                     <label for="message" class="block text-white mb-2 font-medium">Message:</label>
+                     <textarea id="message" name="message" rows="4"
+                         class="bg-featureListing shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                         required></textarea>
+                 </div>
+                 <div class="flex items-center justify-center">
+                     <button type="submit"
+                         class="bg-black border-black hover:bg-featureListing text-white font-medium  py-2 px-4  focus:outline-none focus:shadow-outline">
+                         Submit
+                     </button>
+                 </div>
+             </form>
+
+         </div>
+     </div>
+    </div>
+ <!-- contact us section ends -->
+
+    <!-- Footer section starts -->
+    <footer class="bg-black footer p-2.5">
+        <div class="flex flex-col md:flex-col lg:flex-row p-2.5 justify-center items-center">
+            <div class="w-1/2 flex items-center justify-around">
+                <img class="w-80 md:w-60 lg:w-80 h-20"
+                    src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp" alt="logo">
+            </div>
+            <div
+                class="flex flex-col  w-full md:w-full lg:w-1/2 flex-column items-center md:items-center lg:items-start justify-center gap-y-5 md:gap-y-5 lg:gap-x-5">
+                <div class="w-2/5 p-2.5">
+                    <h4 class="footer-contact-us text-white flex justify-start  font-semibold border-b border-white">
+                        Contact US</h4>
+                </div>
+                <div class="flex flex-col md:flex-col lg:flex-row gap-y-2 md:gap-y-2  lg:gap-x-5 w-auto">
+                    <div class="w-auto">
+                        <li class="text-white">3457682344</li>
+                        <li class="text-white">info@zenithhome@gmail.com</li>
+                    </div>
+                    <div class="w-auto">
+                        <p class="text-white">Zenith</p>
+                        <p class="text-white">257 North Cañon Drive, 2nd Floor</p>
+                        <p class="text-white">Beverly Hills, CA 90210</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-2.5">
+            <p class="text-white flex justify-center"> Copyright @ 2022 Novel office. All rights reserved.
+                Privacy-Policy T&C</p>
+        </div>
+
+    </footer>
+
+    <!-- Footer section ends -->
+    
 </body>
 </html>
