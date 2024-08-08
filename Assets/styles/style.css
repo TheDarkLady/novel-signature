@@ -663,14 +663,13 @@ body {
     font-size: 20px;
     font-weight: 500;
     color: #0a0907;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 .about-novel-secondpara{
-    font-family: 'Rollgates';
+    font-family: 'Abhaya libre';
     font-size: 20px;
-    font-weight: medium;
-    color: #5b4f40;
-    letter-spacing: 1px;
+    color: #0a0907;
+    /* letter-spacing: 1px; */
 }
 
 /* about novel section ends */
@@ -804,6 +803,35 @@ body {
     /* letter-spacing: 1px; */
     color: #0a0907;
 }
+.recently-added-card-heading{
+    font-family: 'Rollgates';    
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+    color: #0a0907;
+}
+.bloghr{
+    border: none;
+    border-top: 1px solid #24333a40;
+    width: 30%;
+}
 /* Recently added section ends */
+
+/* browse through categories section starts */
+.browse-through-heading{
+    font-family: 'Rollgates';    
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+    color: #fff;
+}
+.browse-through-card-heading{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+}
+.browse-through-card-para{
+    font-family: 'Abhaya libre';
+    font-size: 16px;
+}
+
+/* browse through categories section ends */
 /************** Blog page styles ends  ************/
 /* body styles ends */
