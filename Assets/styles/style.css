@@ -744,4 +744,66 @@ body {
 /* Contact us details section ends */
 
 /**********`Contact us page ends  **********/
+
+/************** Blog page styles starts  ************/
+.blog-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #0a0907;
+}
+.blog-para{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    color: #0a0907;
+    /* letter-spacing: 1px; */
+}
+
+/* blog carousel section starts */
+.blog-carousel{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.blog-carousel-slide{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: nowrap;
+   animation: blog-slide 40s infinite linear;
+}
+
+.blog-carousel-slide img{
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.blog-carousel-slide img:hover{
+    filter: grayscale(100%);
+}
+
+@keyframes blog-slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+/* blog carousel section ends */
+
+/* Recently added section starts */
+.recently-added-heading{
+    font-family: 'Rollgates';    
+    font-size: 25px;
+    /* letter-spacing: 1px; */
+    color: #0a0907;
+}
+/* Recently added section ends */
+/************** Blog page styles ends  ************/
 /* body styles ends */
