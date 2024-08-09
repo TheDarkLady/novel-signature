@@ -890,4 +890,47 @@ body {
     display: none;
 }
 /************ gallery page styles ends  ***********/
+
+/************ Active listing page styles starts ************/
+.activity-list-heading{
+    font-family: 'Rollgates';    
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #0a0907;
+}
+
+.active-listing-card-heading{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #0a0907;
+    /* letter-spacing: 1px; */
+}
+.active-listing-card-para{
+    font-family: 'abhaya libre';
+    font-size: 12px;
+    color: #0a0907;
+    /* letter-spacing: 1px; */
+}
+
+.active-listing-grid{
+    display: grid;
+}
+
+@media only screen and (max-width: 500px) {
+    .active-listing-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+}
+/* @media only screen and (max-width: 500px) {
+    .activity-list-heading{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .activity-list-heading{
+        font-size: 40px;
+    }
+} */
+
+/*********** Active listing page styles ends ************/
 /* body styles ends */
