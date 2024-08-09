@@ -837,11 +837,11 @@ body {
 
 /************ gallery page styles starts **********/
 .gallery-overlay{
-    background-color: #000;
+    background-color: #ddb07154;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .gallery-heading{
@@ -870,7 +870,18 @@ body {
 }
 .tab-btn.active .tab-para {
     color: #c28a46; /* Active tab button color */
+    border-bottom: 1px solid #c28a46;
 }
+/* #tab-dropdown:focus option {
+    background-color: white; 
+    color: black; 
+}
+
+#tab-dropdown:focus option:checked,
+#tab-dropdown:focus option:hover {
+    background-color: #c28a46 !important;
+    color: white !important; 
+} */
 
 #tab1 {
     display: grid;

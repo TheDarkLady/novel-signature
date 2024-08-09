@@ -196,9 +196,21 @@
     <!-- Banner carousel ends -->
 
     <!--  Tabs scetion starts-->
-      <div class="w-full h-full bg-themeColor py-5">
-        <div class="max-w-[1200px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 justify-center items-center mx-auto py-5 gap-y-10">
-            <div class="flex flex-row justify-center items-center gap-x-5 p-5">
+    <div class="w-full h-full bg-themeColor py-5">
+        <div class="max-w-[1200px] w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 justify-center items-center mx-auto py-5 gap-y-10">
+            <!-- Dropdown for small screens -->
+            <div class="flex md:hidden lg:hidden justify-center items-center">
+                <select id="tab-dropdown" class="w-3/4 p-2 border border-gray-300">
+                    <option value="tab1" id="tab-sm-1">All</option>
+                    <option value="tab2" id="tab-sm-2">Living Rooms</option>
+                    <option value="tab3" id="tab-sm-3">Kitchen</option>
+                    <option value="tab4" id="tab-sm-4">Bedroom</option>
+                    <option value="tab5" id="tab-sm-5" >Amenities</option>
+                </select>
+            </div>
+            
+            <!-- Tabs for larger screens -->
+            <div class="hidden md:flex lg:flex flex-row justify-center items-center gap-x-5 p-5">
                 <div id="tab-btn-1" class="tab-btn">
                     <p class="tab-para font-medium">All</p>
                 </div>
@@ -215,36 +227,38 @@
                     <p class="tab-para font-medium">Amenities</p>
                 </div>
             </div>
-            <div id="tab1" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                <img src="../assets/images/gallary-tab-1.JPG" alt="">
-                <img src="../assets/images/gallary-tab-2.png" alt="">
-                <img src="../assets/images/gallary-tab-3.JPG" alt="">
-                <img src="../assets/images/gallary-tab-4.JPG" alt="">
-                <img src="../assets/images/gallary-tab-5.JPG" alt="">
-                <img src="../assets/images/gallary-tab-6.png" alt="">
-                <img src="../assets/images/gallary-tab-7.JPG" alt="">
-                <img src="../assets/images/gallary-tab-8.JPG" alt="">
-                <img src="../assets/images/gallary-tab-9.png" alt="">
+    
+            <!-- Content -->
+            <div id="tab1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 justify-items-center" style="display: none;">
+                <img src="../assets/images/gallary-tab-1.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-2.png" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-3.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-4.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-5.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-6.png" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-7.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-8.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-9.png" alt="" class="w-[350px] h-[250px]">
             </div>
-            <div id="tab2" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                <img src="../assets/images/gallary-tab-1.JPG" alt="">
-                <img src="../assets/images/gallary-tab-3.JPG" alt="">
-                 <img src="../assets/images/gallary-tab-7.JPG" alt="">
+            <div id="tab2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 justify-items-center" style="display: none;">
+                <img src="../assets/images/gallary-tab-1.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-3.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-7.JPG" alt="" class="w-[350px] h-[250px]">
             </div>
-            <div id="tab3" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                <img src="../assets/images/gallary-tab-8.JPG" alt="">
+            <div id="tab3" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 justify-items-center" style="display: none;">
+                <img src="../assets/images/gallary-tab-8.JPG" alt="" class="w-[350px] h-[250px]">
             </div>
-            <div id="tab4" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                <img src="../assets/images/gallary-tab-9.png" alt="">
+            <div id="tab4" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 justify-items-center" style="display: grid;">
+                <img src="../assets/images/gallary-tab-9.png" alt="" class="w-[350px] h-[250px]">
             </div>
-            <div id="tab5" class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
-                <img src="../assets/images/gallary-tab-5.JPG" alt="">
-                <img src="../assets/images/gallary-tab-6.png" alt="">
-                <img src="../assets/images/gallary-tab-7.JPG" alt="">
+            <div id="tab5" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 justify-items-center" style="display: none;">
+                <img src="../assets/images/gallary-tab-5.JPG" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-6.png" alt="" class="w-[350px] h-[250px]">
+                <img src="../assets/images/gallary-tab-7.JPG" alt="" class="w-[350px] h-[250px]">
             </div>
-
         </div>
-      </div>
+    </div>
+    
 
     <!-- Tabs scetion ends -->
 
