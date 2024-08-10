@@ -911,26 +911,61 @@ body {
     color: #0a0907;
     /* letter-spacing: 1px; */
 }
-
 .active-listing-grid{
     display: grid;
 }
-
+.filters{
+    font-family: 'abhaya libre';
+    font-size: 16px;
+    color: #fff;
+    /* letter-spacing: 1px; */
+}
+#type-dropdown{
+    display: none;
+}
+#type-filter:hover #type-dropdown{
+    display: block;
+}
+.dropdown-options label {
+    cursor: pointer;
+}
+.dropdown-options input[type="checkbox"] {
+    margin-right: 8px;
+}
+.custom-dropdown:after {
+    content: "▼";
+    float: right;
+    margin-right: 8px;
+    color: #000;
+}
+/* #price-dropdown.hidden {
+    display: none;
+} */
+#min-dropdown-options{
+    display: none;
+} 
+#min-price:hover #min-dropdown-options{
+    display: block;
+}
 @media only screen and (max-width: 500px) {
     .active-listing-grid{
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
     }
 }
-/* @media only screen and (max-width: 500px) {
-    .activity-list-heading{
-        font-size: 50px;
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+    .filters{
+        font-size: 15px;
     }
 }
-@media only screen and (max-width: 350px) {
-    .activity-list-heading{
-        font-size: 40px;
+@media only screen and (max-width: 384px) 
+{
+    .filters{
+        font-size: 14px;
     }
-} */
+}
+
+
 
 /*********** Active listing page styles ends ************/
 /* body styles ends */
