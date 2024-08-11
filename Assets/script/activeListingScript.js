@@ -80,4 +80,70 @@ document.addEventListener('DOMContentLoaded', function () {
                     beds4.style.border = "none";
                     beds5.style.border = "1px solid #000000";
                 });
+
+                // baths filter script
+                const bathAny = document.getElementById('bath-any');
+                const bath1 = document.getElementById('bath-1');
+                const bath2 = document.getElementById('bath-2');
+                const bath3 = document.getElementById('bath-3');
+                const bath4 = document.getElementById('bath-4');
+                const bath5 = document.getElementById('bath-5');
+
+                bathAny.style.border = "1px solid #000000";
+                bath1.style.border = "none";
+                bath2.style.border = "none";
+                bath3.style.border = "none";
+                bath4.style.border = "none";
+                bath5.style.border = "none";
+
+                bathAny.addEventListener('click', () => {
+                    console.log("bath any is clicked");
+                    bathAny.style.border = "1px solid #000000";
+                    bath1.style.border = "none";
+                    bath2.style.border = "none";
+                    bath3.style.border = "none";
+                    bath4.style.border = "none";
+                    bath5.style.border = "none";
+                });
+
+                bath1.addEventListener('click', () => {
+                    bathAny.style.border = "none";
+                    bath1.style.border = "1px solid #000000";
+                    bath2.style.border = "none";
+                    bath3.style.border = "none";
+                    bath4.style.border = "none";
+                    bath5.style.border = "none";
+                });
+                bath2.addEventListener('click', () => {
+                    bathAny.style.border = "none";
+                    bath1.style.border = "none";
+                    bath2.style.border = "1px solid #000000";
+                    bath3.style.border = "none";
+                    bath4.style.border = "none";
+                    bath5.style.border = "none";
+                });
+                bath3.addEventListener('click', () => {
+                    bathAny.style.border = "none";
+                    bath1.style.border = "none";
+                    bath2.style.border = "none";
+                    bath3.style.border = "1px solid #000000";
+                    bath4.style.border = "none";
+                    bath5.style.border = "none";
+                });
+                bath4.addEventListener('click', () => {
+                    bathAny.style.border = "none";
+                    bath1.style.border = "none";
+                    bath2.style.border = "none";
+                    bath3.style.border = "none";
+                    bath4.style.border = "1px solid #000000";
+                    bath5.style.border = "none";
+                });
+                bath5.addEventListener('click', () => {
+                    bathAny.style.border = "none";
+                    bath1.style.border = "none";    
+                    bath2.style.border = "none";    
+                    bath3.style.border = "none";    
+                    bath4.style.border = "none";    
+                    bath5.style.border = "1px solid #000000";
+                });
 })

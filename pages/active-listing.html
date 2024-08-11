@@ -227,7 +227,7 @@
                                             Select Maximum Price
                                         </div>
                                         <div class="dropdown-options absolute bg-white border border-gray-300 w-full rounded" id="max-price-dropdown">
-                                            <label class="block p-2"><input type="checkbox" value="50" /> $50</label>
+                                            <label class="block p-2 text-black"><input type="checkbox" value="50" /> $50</label>
                                             <label class="block p-2"><input type="checkbox" value="60" /> $60</label>
                                             <label class="block p-2"><input type="checkbox" value="70" /> $70</label>
                                             <label class="block p-2"><input type="checkbox" value="100" /> $100</label>
@@ -251,7 +251,7 @@
                         <a href="#" id="beds-filter" class="filters font-medium hidden md:block lg:block">Beds >
                             <div id="beds-dropdown" class="p-5 flex flex-col justify-center items-start bg-white absolute w-[250px] border border-gray-300 rounded ">
                                 <div class="w-full">
-                                    <p class="text-[18px] text-black">Price Range</p>
+                                    <p class="text-[18px] text-black">Number of Bedrooms</p>
                                 </div>
                                 <div class="mt-2 p-2 w-full flex flex-col gap-y-4">
                                     <div class="w-full grid grid-cols-6 justify-center items-center relative border border-gray-300">
@@ -297,8 +297,310 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="filters font-medium hidden md:block lg:block">Baths ></a>
-                        <a href="" class="filters font-medium ">More Filter ></a>
+                        <a href="#" id="baths-filter" class="filters font-medium hidden md:block lg:block">Baths >
+                            <div id="baths-dropdown" class="p-5 flex flex-col justify-center items-start bg-white absolute w-[250px] border border-gray-300 rounded ">
+                                <div class="w-full">
+                                    <p class="text-[18px] text-black">Number of Baths</p>
+                                </div>
+                                <div class="mt-2 p-2 w-full flex flex-col gap-y-4">
+                                    <div class="w-full grid grid-cols-6 justify-center items-center relative border border-gray-300">
+                                        <div id="bath-any" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                Any
+                                            </p>
+                                        </div>
+                                        <div id="bath-1"class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                1+
+                                            </p>
+                                        </div>
+                                        <div id="bath-2" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                2+
+                                            </p>
+                                        </div>
+                                        <div id="bath-3" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                3+
+                                            </p>
+                                        </div>
+                                        <div id="bath-4" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                4+
+                                            </p>
+                                        </div>
+                                        <div id="bath-5" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                5+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1">
+                                        <input type="checkbox"  id="beds" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                        <label for="beds" class="text-[14px] text-gray-700">Use Exact Match</label>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-1.5">
+                                    <button class="text-white bg-black font-semibold w-full py-1.5 rounded">Apply</button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" id="more-filters" class="filters font-medium ">More Filter >
+                            <div id="more-dropdown" class="p-5 flex flex-col justify-center items-start bg-white absolute  border border-gray-300 rounded h-[300px] overflow-auto">
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Price Range</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-row gap-y-4">
+                                        <!-- Minimum Price Dropdown -->
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="min-price" class="text-[14px] text-gray-700">Minimum</label>
+                                                <select id="min-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                        <!-- separator -->
+                                         <div class="w-[20px] flex flex-col justify-end items-center">
+                                            <p class="text-[20px] text-black py-1.5">-</p>
+                                         </div>
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="max-price" class="text-[14px] text-gray-700">Maximum</label>
+                                                <select id="max-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No Min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Beds & Bath</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-col gap-y-2">
+                                        <p class="text-black">Beds :</p>
+                                        <div class="w-full grid grid-cols-6 justify-center items-center relative border border-gray-300">
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    Any
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    1+
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    2+
+                                                </p>
+                                            </div>
+                                            <div  class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    3+
+                                                </p>
+                                            </div>
+                                            <div  class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    4+
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    5+
+                                                </p>
+                                            </div>
+    
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="beds" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="beds" class="text-[14px] text-gray-700">Use Exact Match</label>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-col gap-y-2">
+                                        <p class="text-black">Baths :</p>
+                                        <div class="w-full grid grid-cols-6 justify-center items-center relative border border-gray-300">
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    Any
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    1+
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    2+
+                                                </p>
+                                            </div>
+                                            <div  class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    3+
+                                                </p>
+                                            </div>
+                                            <div  class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    4+
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col justify-center items-center p-2">
+                                                <p class="text-black font-medium">
+                                                    5+
+                                                </p>
+                                            </div>
+    
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="beds" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="beds" class="text-[14px] text-gray-700">Use Exact Match</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Property Status</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-col gap-y-2">
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="active-listing" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="active-listing" class="text-[14px] text-gray-700">Active listing</label>
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="comming-soon" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="comming-soon" class="text-[14px] text-gray-700">Comming Soon</label>
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="pending" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="pending" class="text-[14px] text-gray-700">Pending and Under Contract</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Parking Slots</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-row gap-x-2.5">
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="two" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="two" class="text-[14px] text-gray-700">2+</label>
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="three" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="three" class="text-[14px] text-gray-700">3+</label>
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="four" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="four" class="text-[14px] text-gray-700">4+</label>
+                                        </div>
+                                        <div class="flex flex-row justify-start items-center gap-1">
+                                            <input type="checkbox"  id="five" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                            <label for="five" class="text-[14px] text-gray-700">5+</label>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1 p-2">
+                                        <input type="checkbox"  id="garage" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                        <label for="garage" class="text-[14px] text-gray-700">Must have Garage </label>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Square Feet</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-row gap-y-4">
+                                        <!-- Minimum Price Dropdown -->
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="min-price" class="text-[14px] text-gray-700">Minimum</label>
+                                                <select id="min-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                        <!-- separator -->
+                                         <div class="w-[20px] flex flex-col justify-end items-center">
+                                            <p class="text-[20px] text-black py-1.5">-</p>
+                                         </div>
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="max-price" class="text-[14px] text-gray-700">Maximum</label>
+                                                <select id="max-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No Min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full">
+                                        <p class="text-[18px] text-black">Lot Size</p>
+                                    </div>
+                                    <div class="mt-2 p-2 w-full flex flex-row gap-y-4">
+                                        <!-- Minimum Price Dropdown -->
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="min-price" class="text-[14px] text-gray-700">Minimum</label>
+                                                <select id="min-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                        <!-- separator -->
+                                         <div class="w-[20px] flex flex-col justify-end items-center">
+                                            <p class="text-[20px] text-black py-1.5">-</p>
+                                         </div>
+                                        <div class="w-auto flex flex-col relative">
+                                            <label for="max-price" class="text-[14px] text-gray-700">Maximum</label>
+                                                <select id="max-price" class="w-full p-2 border border-gray-300 text-black">
+                                                    <option value="no" type="checkbox" class="text-black">No Min</option>
+                                                    <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                    <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                    <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full flex flex-row justify-around items-center gap-1">
+                                        <p class="text-[18px] text-black">Great School Rating</p>
+                                        <label for="school-rating" class="text-[14px] text-gray-700">0/10 </label>
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1 p-2">
+                                        <input type="range" id="school-rating" name="rating" min="0" max="10" step="1"  class="w-full rounded border border-gray-300" />
+                                    </div>
+                                </div>
+                                <div class="w-full border-b border-black p-2.5">
+                                    <div class="w-full flex flex-row justify-around items-center gap-1">
+                                        <p class="text-[18px] text-black">Transist Rating</p>
+                                        <label for="transist-rating" class="text-[14px] text-gray-700">0/10 </label>
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1 p-2">
+                                        <input type="range" id="transist-rating" name="rating" min="0" max="10" step="1"  class="w-full rounded border border-gray-300" />
+                                    </div>
+                                </div>
+                                <div class="w-full  p-2.5">
+                                    <div class="w-full flex flex-row justify-around items-center gap-1">
+                                        <p class="text-[18px] text-black">Walk Score </p>
+                                        <label for="walk-rating" class="text-[14px] text-gray-700">0/10 </label>
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1 p-2">
+                                        <input type="range" id="walk-rating" name="rating" min="0" max="10" step="1"  class="w-full rounded border border-gray-300" />
+                                    </div>
+                                </div>
+                                <div class="w-full mt-1.5">
+                                    <button class="text-white bg-black font-semibold w-full py-1.5 rounded">Apply</button>
+                                </div>
+                            </div>
+                        </a>
                     </div>
             </div>
             <div class="hidden lg:flex flex-row justify-center items-center gap-x-1.5">

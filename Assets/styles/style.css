@@ -933,7 +933,46 @@ body {
 #price-filter:hover #price-dropdown{
     display: block;
 }
-
+#beds-dropdown{
+    display: none;
+}
+#beds-filter:hover #beds-dropdown{
+    display: block;
+}
+#baths-dropdown{
+    display: none;
+}
+#baths-filter:hover #baths-dropdown{
+    display: block;
+}
+#area-dropdown{
+    display: none;
+}
+#area-filter:hover #area-dropdown{
+    display: block;
+}
+#more-dropdown{
+    display: none;
+    right: 10px;
+    top: 80px;
+    width: 400px;
+}
+#more-filters:hover #more-dropdown{
+    display: block;
+}
+@media only screen and (max-width:767px){
+    #more-dropdown{
+        top: 150px;
+        left: 0;
+    }
+}
+@media only screen and (max-width:430px){
+    #more-dropdown{
+        width: 250px;
+        top: 150px;
+        left:-10px
+    }
+}
 @media only screen and (max-width: 500px) {
     .active-listing-grid{
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
