@@ -7,7 +7,7 @@
     <title>Active Listing</title>
     <link rel="stylesheet" href="../assets/styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="../assets/script/script.js"></script>
+    <!-- <script src="../assets/script/script.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- style for to customize tailwind -->
@@ -155,7 +155,7 @@
     <div class="h-[80px] bg-themeColor"></div>
     <!-- header ends -->
 
-    <!-- heading section starts -->
+    <!-- Banner section starts -->
     <div class="bg-featureListing flex flex-col justify-end items-start h-[200px] mx-auto p-5 fixed w-screen z-20">
         <div class="max-w-[1200px] w-full flex flex-col md:flex-row lg:flex-row justify-between items-center mx-auto fade-down in-downview">
             <div class="flex flex-col md:flex-row lg:flex-row justify-center items-start md:items-center lg:items-center p-5 gap-x-2.5 gap-y-5 w-full">
@@ -203,32 +203,43 @@
                                 <div class="w-full">
                                     <p class="text-[18px] text-black">Price Range</p>
                                 </div>
-                                <div class="mt-2 p-2 w-full flex flex-col gap-y-4">
+                                <div class="mt-2 p-2 w-full flex flex-row gap-y-4">
                                     <!-- Minimum Price Dropdown -->
-                                    <div class="w-full flex flex-col relative">
+                                    <div class="w-auto flex flex-col relative">
                                         <label for="min-price" class="text-[14px] text-gray-700">Minimum</label>
-                                        <div class="custom-dropdown w-full border border-gray-300 p-2 rounded" id="min-price">
-                                            Select Minimum Price
-                                        </div>
-                                        <div class="dropdown-options absolute bg-white border border-gray-300 w-full rounded" id="min-dropdown-options">
-                                            <label class="block p-2"><input type="checkbox" value="0" /> $0</label>
-                                            <label class="block p-2"><input type="checkbox" value="10" /> $10</label>
-                                            <label class="block p-2"><input type="checkbox" value="20" /> $20</label>
-                                            <label class="block p-2"><input type="checkbox" value="30" /> $30</label>
-                                        </div>
+                                            <select id="min-price" class="w-full p-2 border border-gray-300 text-black">
+                                                <option value="no" type="checkbox" class="text-black">No min</option>
+                                                <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                            </select>
                                     </div>
+                                    <!-- separator -->
+                                     <div class="w-[20px] flex flex-col justify-end items-center">
+                                        <p class="text-[20px] text-black py-1.5">-</p>
+
+                                     </div>
                                     <!-- Maximum Price Dropdown -->
-                                    <div class="w-full flex flex-col relative">
+                                    <!-- <div class="w-full flex flex-col relative">
                                         <label for="max-price" class="text-[14px] text-gray-700">Maximum</label>
                                         <div class="custom-dropdown w-full border border-gray-300 p-2 rounded" id="max-price">
                                             Select Maximum Price
                                         </div>
-                                        <div class="dropdown-options absolute bg-white border border-gray-300 w-full rounded hidden">
+                                        <div class="dropdown-options absolute bg-white border border-gray-300 w-full rounded" id="max-price-dropdown">
                                             <label class="block p-2"><input type="checkbox" value="50" /> $50</label>
                                             <label class="block p-2"><input type="checkbox" value="60" /> $60</label>
                                             <label class="block p-2"><input type="checkbox" value="70" /> $70</label>
                                             <label class="block p-2"><input type="checkbox" value="100" /> $100</label>
                                         </div>
+                                    </div> -->
+                                    <div class="w-auto flex flex-col relative">
+                                        <label for="max-price" class="text-[14px] text-gray-700">Maximum</label>
+                                            <select id="max-price" class="w-full p-2 border border-gray-300 text-black">
+                                                <option value="no" type="checkbox" class="text-black">No Min</option>
+                                                <option value="50K" type="checkbox" class="text-black">$50K</option>
+                                                <option value="100k" type="checkbox" class="text-black">$100K</option>
+                                                <option value="200k" type="checkbox" class="text-black">$200K</option>
+                                            </select>
                                     </div>
                                 </div>
                                 <div class="w-full mt-1.5">
@@ -236,7 +247,55 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="filters font-medium hidden md:block lg:block">Beds ></a>
+                        <a href="#" id="beds-filter" class="filters font-medium hidden md:block lg:block">Beds >
+                            <div id="beds-dropdown" class="p-5 flex flex-col justify-center items-start bg-white absolute w-[250px] border border-gray-300 rounded ">
+                                <div class="w-full">
+                                    <p class="text-[18px] text-black">Price Range</p>
+                                </div>
+                                <div class="mt-2 p-2 w-full flex flex-col gap-y-4">
+                                    <div class="w-full grid grid-cols-6 justify-center items-center relative border border-gray-300">
+                                        <div id="beds-any" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                Any
+                                            </p>
+                                        </div>
+                                        <div id="beds-1"class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                1+
+                                            </p>
+                                        </div>
+                                        <div id="beds-2" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                2+
+                                            </p>
+                                        </div>
+                                        <div id="beds-3" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                3+
+                                            </p>
+                                        </div>
+                                        <div id="beds-4" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                4+
+                                            </p>
+                                        </div>
+                                        <div id="beds-5" class="flex flex-col justify-center items-center p-2">
+                                            <p class="text-black font-medium">
+                                                5+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="flex flex-row justify-start items-center gap-1">
+                                        <input type="checkbox"  id="beds" class="w-[20px] h-[20px] rounded border border-gray-300" />
+                                        <label for="beds" class="text-[14px] text-gray-700">Use Exact Match</label>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-1.5">
+                                    <button class="text-white bg-black font-semibold w-full py-1.5 rounded">Apply</button>
+                                </div>
+                            </div>
+                        </a>
                         <a href="" class="filters font-medium hidden md:block lg:block">Baths ></a>
                         <a href="" class="filters font-medium ">More Filter ></a>
                     </div>
@@ -252,12 +311,18 @@
 
         </div>
     </div>
+    
+    <!-- Banner section ends -->
+
+    <!-- Body section starts  -->
     <div class="bg-aboutNovel h-full flex flex-col justify-center items-start">
         <div class="w-full h-[200px] mx-auto">
 
         </div>
+        
         <div
             class="max-w-[1200px] w-full flex flex-col md:flex-row lg:flex-row justify-center items-start mx-auto fade-down p-5 gap-x-5">
+            <!-- map section start -->
             <div class="hidden md:hidden lg:block w-[50%]">
                 <div class="w-full h-full">
                     <iframe
@@ -266,6 +331,9 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+            <!-- map section ends -->
+
+            <!-- active listing section starts -->
             <div class="w-full lg:w-[50%] flex flex-col justify-center items-start">
                 <div>
                     <h1 class="activity-list-heading font-semibold">Luxury Homes</h1>
@@ -815,10 +883,11 @@
 
                 </div>
             </div>
+            <!-- Active listing ends -->
 
         </div>
     </div>
-    <!-- heading section ends -->
+    <!-- Body section ends -->
 
     <!-- Footer section starts -->
     <footer class="bg-black footer p-2.5">
@@ -874,5 +943,6 @@
 
     })
 </script>
+<script src="../assets/script/script.js"></script>
 
 </html>
