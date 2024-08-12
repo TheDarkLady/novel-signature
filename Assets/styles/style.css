@@ -1062,5 +1062,37 @@ body {
         font-size: 15px;
     }
 }
-/**************Upcomming homes page ends  *************/
+/************** Upcomming homes page ends  *************/
+
+/************** Sold properties page starts   ************/
+.sold-properties-heading{
+    font-family: 'Rollgates';
+    font-size: 50px;
+    /* letter-spacing: 2px; */
+    color: #fff;
+}
+.sold-properties-para{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #fff;
+    /* letter-spacing: 1px; */
+}
+.dallas, .houston, .Austin .sanantonio{
+    display: block;
+}
+@media only screen and (max-width: 500px) and (min-width:410px) {
+    .sold-properties-heading{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width:409px) {
+    .sold-properties-heading{
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+/************** Sold properties page ends   ************ */
 /* body styles ends */
