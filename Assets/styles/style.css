@@ -954,7 +954,7 @@ body {
 #more-dropdown{
     display: none;
     right: 10px;
-    top: 80px;
+    /* top: 80px; */
     width: 400px;
 }
 #more-filters:hover #more-dropdown{
@@ -1033,8 +1033,34 @@ body {
         font-size: 14px;
     }
 }
-
-
-
 /*********** Active listing page styles ends ************/
+
+/************ Upcomming homes page starts  ************/
+.upcoming-homes-heading{
+    font-family: 'Rollgates';    
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #0a0907;
+}
+.upcoming-homes-para{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #0a0907;
+    /* letter-spacing: 1px; */
+}
+.future-homes-card-para{
+    font-family: 'abhaya libre';
+    font-size: 15px;
+    color: #fff;
+    /* letter-spacing: 1px; */
+}
+@media only screen and (max-width: 442px) {
+    .upcoming-homes-heading{    
+        font-size: 40px;
+    }
+    .upcoming-homes-para{
+        font-size: 15px;
+    }
+}
+/**************Upcomming homes page ends  *************/
 /* body styles ends */
