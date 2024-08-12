@@ -1110,4 +1110,24 @@ body {
 }
 
 /************** Portfolio page styles ends  *************/
+
+/************** property page styles starts *************/
+.property-heading{
+    font-family: 'Rollgates';
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #0a0907;
+}
+.property-sub-heading{
+    font-family: 'abhaya libre';
+    font-size: 22px;
+    color: #0a0907;
+}
+.property-para{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #0a0907;
+}
+
+/************** property page styles ends  **************/
 /* body styles ends */
