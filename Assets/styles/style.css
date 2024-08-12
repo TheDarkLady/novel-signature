@@ -1095,4 +1095,19 @@ body {
     }
 }
 /************** Sold properties page ends   ************ */
+
+/************** Portfolio page styles starts  *************/
+.qualities-heading{
+    font-family: 'rolgates';
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #0a0907;
+}
+.qualities-para{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #0a0907;
+}
+
+/************** Portfolio page styles ends  *************/
 /* body styles ends */
