@@ -110,6 +110,9 @@ ul li:hover ul.dropdown {
 /* Footer styles starts */
 .footer {
     min-height: 250px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
 }
 .footer-contact-us {
     font-size: 30px;
@@ -1128,6 +1131,30 @@ body {
     font-size: 18px;
     color: #0a0907;
 }
-
+.faq-para{
+    font-family: 'abhaya libre';
+    font-size: 22px;
+    color: #0a0907;
+}
+.floor-plan-heading{
+    font-family: 'rollgates';
+    font-size: 40px;
+    /* letter-spacing: 2px; */
+    color: #0a0907;
+}
+.floor-plan-img {
+    transform: rotate(-25deg);
+    transition: transform 2s ease-in-out;
+}
+.agent-details-para{
+    font-family: 'abhaya libre';
+    font-size: 16px;
+    color: #0a0907;
+}
+.form-label{
+    font-family: 'abhaya libre';
+    font-size: 18px;
+    color: #0a0907;
+}
 /************** property page styles ends  **************/
 /* body styles ends */
