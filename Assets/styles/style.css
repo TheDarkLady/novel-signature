@@ -92,8 +92,8 @@ ul li ul.dropdown {
     padding: 10px;
     position: absolute;
     top: 80px;
-    background-color: #faf6f09e;
-    backdrop-filter: blur(52px);
+    background-color: #e7dfd491;
+    backdrop-filter: blur(44px);
     z-index: 2;
     font-family: "Abhaya libre";
     display: none;
@@ -231,20 +231,23 @@ body {
         font-size: 30px;
     }
     .timeless-para{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 594px) {
     .timeless-heading { 
         font-size: 25px;
     }
+    .timeless-para{
+        font-size: 18px;
+    }
 }
 @media only screen and (max-width: 508px) {
     .timeless-heading { 
-        font-size: 20px;
+        font-size: 25px;
     }
     .timeless-para{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 /* Timeless section styles ends */
@@ -273,23 +276,23 @@ body {
     
 }
 .qulity-card-heading{
-    font-size: 'Abhaya libre';
-    font-size: 16px;
+    font-family: 'Abhaya libre';
+    font-size: 25px;
     font-weight: 500;
 
 }
 .qulity-card-para{
-    font-size: 'Abhaya libre';
-    font-size: 16px;
+    font-family: 'Abhaya libre';
+    font-size: 18px;
     font-weight: 500;
     text-align: left;
 }
 @media only screen and (max-width: 1023px) {
     .qulity-card-heading{
-        font-size: 18px;
+        font-size: 25px;
     }
     .qulity-card-para{
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width:937px){
@@ -306,9 +309,18 @@ body {
     .quality-heading { 
         font-size: 25px;
     }
+    .qulity-card-heading{
+        font-size: 22px;
+    }
+    .qulity-card-para{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 508px) {
     .quality-heading { 
+        font-size: 25px;
+    }
+    .qulity-card-heading{
         font-size: 20px;
     }
 }

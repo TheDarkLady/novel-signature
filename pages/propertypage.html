@@ -16,6 +16,7 @@
             border-radius: 5px;
             margin: 0 5px;
             cursor: pointer;
+            transition: opacity 0.3s ease
         }
         .swiper-pagination-bullet-active .swiper-pagination-thumbnail {
             border: 2px solid #fff;
@@ -242,7 +243,7 @@
                 <p class="property-sub-heading font-semibold">$89.9M | 7 Bedrooms | 1 Bathroom | 28,500 Square Feet</p>
             </div>
             <div class="w-full">
-                <p class="property-para font-medium">Nestled within the exclusive gates of the renowned Beverly Park enclave lies a world-class estate proudly standing as the pinnacle of luxury homes: 73 Beverly Park Lane. Collectively envisioned by the esteemed team of Harrison Design, Todd DeMann of Paradigm Developers, and Mike Moser Studio, the residence is a masterwork of inspiring design and immaculate execution. Situated on a majestic parcel of approximately 2.6 acres, the home promises an unrivaled level of privacy and serenity set against enchanting grounds and breathtaking vistas of the city skyline and sparkling ocean. Step inside to experience a thoughtfully conceived open layout that blends dramatic scale and volume with comfortable, luxurious living. The seamless integration of grand indoor living areas with the numerous patios and verdant grounds is ideal for both intimate gatherings and large events. Enjoy al fresco dining in the elegant 18-person formal dining room that’s surrounded by floor-to-ceiling glass sliding doors and exudes an atmosphere reminiscent of world-class restaurants. The primary suite, spanning approximately 5,000 square feet, emerges as the epitome of comfort and relaxation; the ultimate oasis to rejuvenate and recharge with dual bathrooms and a multi-room closet, massage room, glam room/salon, dry sauna, and a separate entrance for the utmost privacy. Additional features elevating the home’s supreme living experience include a state-of-the-art screening room, a multitude of health and wellness amenities, two kitchens including a secondary commercial-grade chef’s kitchen, sophisticated executive home office, and zero-edge lap pool that is approximately 85-feet long set within the massive backyard that also features an outdoor chef’s kitchen, expansive lawn, and pristine orchard of fruit trees. Every aspect of the property was thoughtfully designed with unparalleled finesse to maximize livability, comfort, and enjoyment. Truly a blue-chip estate that stands as the crown jewel of Beverly Park. Also available for purchase is the adjacent lot, which together with 73 Beverly Park, provides the unique opportunity to own a massive compound totaling approximately 4.5 acres.</p>
+                <p class="property-para font-medium text-justify">Nestled within the exclusive gates of the renowned Beverly Park enclave lies a world-class estate proudly standing as the pinnacle of luxury homes: 73 Beverly Park Lane. Collectively envisioned by the esteemed team of Harrison Design, Todd DeMann of Paradigm Developers, and Mike Moser Studio, the residence is a masterwork of inspiring design and immaculate execution. Situated on a majestic parcel of approximately 2.6 acres, the home promises an unrivaled level of privacy and serenity set against enchanting grounds and breathtaking vistas of the city skyline and sparkling ocean. Step inside to experience a thoughtfully conceived open layout that blends dramatic scale and volume with comfortable, luxurious living. The seamless integration of grand indoor living areas with the numerous patios and verdant grounds is ideal for both intimate gatherings and large events. Enjoy al fresco dining in the elegant 18-person formal dining room that’s surrounded by floor-to-ceiling glass sliding doors and exudes an atmosphere reminiscent of world-class restaurants. The primary suite, spanning approximately 5,000 square feet, emerges as the epitome of comfort and relaxation; the ultimate oasis to rejuvenate and recharge with dual bathrooms and a multi-room closet, massage room, glam room/salon, dry sauna, and a separate entrance for the utmost privacy. Additional features elevating the home’s supreme living experience include a state-of-the-art screening room, a multitude of health and wellness amenities, two kitchens including a secondary commercial-grade chef’s kitchen, sophisticated executive home office, and zero-edge lap pool that is approximately 85-feet long set within the massive backyard that also features an outdoor chef’s kitchen, expansive lawn, and pristine orchard of fruit trees. Every aspect of the property was thoughtfully designed with unparalleled finesse to maximize livability, comfort, and enjoyment. Truly a blue-chip estate that stands as the crown jewel of Beverly Park. Also available for purchase is the adjacent lot, which together with 73 Beverly Park, provides the unique opportunity to own a massive compound totaling approximately 4.5 acres.</p>
 
             </div>
         </div>
@@ -255,7 +256,7 @@
             <div class="w-full mb-5 flex flex-col  justify-center items-start">
                 <h1 class="property-heading font-medium">Property Details</h1>
             </div>
-            <div class="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                 <div class="w-full flex flex-row justify-around items-start">
                     <p class="text-left w-full">Property Type:</p>
                     <p class="text-left w-full">Single-Family Home</p>
@@ -288,148 +289,215 @@
     <!-- FAQ's section starts -->
     <div class="w-full h-full bg-themeColor">
         <div class="max-w-[1200px] mx-auto py-12 p-5">
-            <div class="overflow-hidden">
+            <div class="overflow-hidden p-5">
                 <details class="border-b border-gray-300">
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
-                        <span class="faq-para font-medium">Beds & Baths</span>
+                    <summary class=" py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                        <span class="faq-para font-medium property-heading">Beds & Baths</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-4 faq-para font-medium"><strong>Beds:</strong> 4<br>
-                        <strong>Baths:</strong>3.5<br>
-                        <strong>Attic:</strong> Finished, 500sqft <br>
-                        <strong>Basement:</strong> Unfinished, 1,200sqft <br>
-                        <strong>Number of Floors:</strong> 2
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Beds:</p>
+                            <p class="text-left w-full">4</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Baths :</p>
+                            <p class="text-left w-full">3.5</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Attic:</p>
+                            <p class="text-left w-full">Finished, 500sq ft</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Basement:</p>
+                            <p class="text-left w-full">Unfinished, 1,200sqft</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Number of Floors</p>
+                            <p class="text-left w-full">2</p>
+                        </div>
+        
+                    </div>
                 </details>
     
                 <details class="border-b border-gray-300">
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
-                        <span class="faq-para font-medium">Interior Features</span>
+                    <summary class="py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                        <span class="faq-para font-medium property-heading">Interior Features</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-4 faq-para font-medium"><strong>Living Room :</strong> 
-                        20x18 ft, hardwood floors, gas fireplace<br>
-                        <strong>Dining Room :</strong>
-                        15x12 ft, hardwood floors, chandelier<br>
-                        <strong>Kitchen :</strong>
-                        18x15 ft, granite countertops, stainless steel appliances, island, pantry<br>
-                        <strong>Master Bedroom :</strong> 
-                        20x18 ft, walk-in closet, en-suite bathroom <br>
-                        <strong>Master Bathroom :</strong> 
-                        15x12 ft, double sink, soaking tub, separate shower <br>
-                        <strong>Additional Bedrooms :</strong> 
-                        14x12 ft each, carpeted<br>
-                        <strong>Additional Bathrooms :</strong> 
-                        Full bath on the second floor, half bath on the main floor<br>
-                        <strong>Laundry Room :</strong> 
-                        10x8 ft, washer and dryer included   
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Living Room :</p>
+                            <p class="text-left w-full">20x18 ft, hardwood floors, gas fireplace</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Dining Room :</p>
+                            <p class="text-left w-full">18x15 ft, granite countertops, stainless steel appliances, island, pantry</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bedroom :</p>
+                            <p class="text-left w-full">20x18 ft, walk-in closet, en-suite bathroom </p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bathroom :</p>
+                            <p class="text-left w-full">15x12 ft, double sink, soaking tub, separate shower</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Additional Bathrooms :</p>
+                            <p class="text-left w-full">Full bath on the second floor, half bath on the main floor</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Laundry Room :</p>
+                            <p class="text-left w-full">10x8 ft, washer and dryer included </p>
+                        </div>
+        
+                    </div>
                 </details>
     
                 <details class="border-b border-gray-300">
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                    <summary class="py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
                         <span class="faq-para font-medium">Exterior Features</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-4 faq-para font-medium"><strong>Garage :</strong>                         
-                        Attached, 2-car capacity<br>
-                        <strong>Parking :</strong>
-                        15x12 ft, hardwood floors, chandelier<br>
-                        <strong>Kitchen :</strong>                       
-                        Driveway fits 2 additional cars<br>
-                        <strong>Yard :</strong> 
-                        Fenced backyard, landscaped, sprinkler syst<br>
-                        <strong>Pool :</strong>                                          
-                        In-ground, 20x10 ft, with a pool house<br>
-                        <strong>Deck/Patio :</strong> 
-                        20x15 ft, covered, with ceiling fan<br>
-                        <strong>Roof :</strong> 
-                        Asphalt shingles, new<br>
-                        <strong>Siding :</strong> 
-                        Brick and stone 
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Living Room :</p>
+                            <p class="text-left w-full">20x18 ft, hardwood floors, gas fireplace</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Dining Room :</p>
+                            <p class="text-left w-full">18x15 ft, granite countertops, stainless steel appliances, island, pantry</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bedroom :</p>
+                            <p class="text-left w-full">20x18 ft, walk-in closet, en-suite bathroom </p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bathroom :</p>
+                            <p class="text-left w-full">15x12 ft, double sink, soaking tub, separate shower</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Additional Bathrooms :</p>
+                            <p class="text-left w-full">Full bath on the second floor, half bath on the main floor</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Laundry Room :</p>
+                            <p class="text-left w-full">10x8 ft, washer and dryer included </p>
+                        </div>
+        
+                    </div>
                 </details>
     
-                <details>
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                <details class="border-b border-gray-300">
+                    <summary class="py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
                         <span class="faq-para font-medium">Financial Information</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-4 faq-para font-medium"><strong>Garage :</strong>                         
-                        Attached, 2-car capacity<br>
-                        <strong>Parking :</strong>
-                        15x12 ft, hardwood floors, chandelier<br>
-                        <strong>Kitchen :</strong>                       
-                        Driveway fits 2 additional cars<br>
-                        <strong>Yard :</strong> 
-                        Fenced backyard, landscaped, sprinkler syst<br>
-                        <strong>Pool :</strong>                                          
-                        In-ground, 20x10 ft, with a pool house<br>
-                        <strong>Deck/Patio :</strong> 
-                        20x15 ft, covered, with ceiling fan<br>
-                        <strong>Roof :</strong> 
-                        Asphalt shingles, new<br>
-                        <strong>Siding :</strong> 
-                        Brick and stone 
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Living Room :</p>
+                            <p class="text-left w-full">20x18 ft, hardwood floors, gas fireplace</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Dining Room :</p>
+                            <p class="text-left w-full">18x15 ft, granite countertops, stainless steel appliances, island, pantry</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bedroom :</p>
+                            <p class="text-left w-full">20x18 ft, walk-in closet, en-suite bathroom </p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bathroom :</p>
+                            <p class="text-left w-full">15x12 ft, double sink, soaking tub, separate shower</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Additional Bathrooms :</p>
+                            <p class="text-left w-full">Full bath on the second floor, half bath on the main floor</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Laundry Room :</p>
+                            <p class="text-left w-full">10x8 ft, washer and dryer included </p>
+                        </div>
+        
+                    </div>
                 </details>
-                <details>
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                <details class="border-b border-gray-300">
+                    <summary class="py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
                         <span class="faq-para font-medium">Community and neighbourhood</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-4 faq-para font-medium"><strong>Garage :</strong>                         
-                        Attached, 2-car capacity<br>
-                        <strong>Parking :</strong>
-                        15x12 ft, hardwood floors, chandelier<br>
-                        <strong>Kitchen :</strong>                       
-                        Driveway fits 2 additional cars<br>
-                        <strong>Yard :</strong> 
-                        Fenced backyard, landscaped, sprinkler syst<br>
-                        <strong>Pool :</strong>                                          
-                        In-ground, 20x10 ft, with a pool house<br>
-                        <strong>Deck/Patio :</strong> 
-                        20x15 ft, covered, with ceiling fan<br>
-                        <strong>Roof :</strong> 
-                        Asphalt shingles, new<br>
-                        <strong>Siding :</strong> 
-                        Brick and stone 
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Living Room :</p>
+                            <p class="text-left w-full">20x18 ft, hardwood floors, gas fireplace</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Dining Room :</p>
+                            <p class="text-left w-full">18x15 ft, granite countertops, stainless steel appliances, island, pantry</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bedroom :</p>
+                            <p class="text-left w-full">20x18 ft, walk-in closet, en-suite bathroom </p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bathroom :</p>
+                            <p class="text-left w-full">15x12 ft, double sink, soaking tub, separate shower</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Additional Bathrooms :</p>
+                            <p class="text-left w-full">Full bath on the second floor, half bath on the main floor</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Laundry Room :</p>
+                            <p class="text-left w-full">10x8 ft, washer and dryer included </p>
+                        </div>
+        
+                    </div>
                 </details>
-                <details>
-                    <summary class="px-6 py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
+                <details class="border-b border-gray-300">
+                    <summary class="py-4 text-lg font-medium cursor-pointer flex justify-between items-center">
                         <span class="faq-para font-medium">Additional Features</span>
                         <svg class="h-5 w-5 text-gray-500 transition-transform transform rotate-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </summary>
-                    <p class="px-6 py-5 faq-para font-medium"><strong>Garage :</strong>                         
-                        Attached, 2-car capacity<br>
-                        <strong>Parking :</strong>
-                        15x12 ft, hardwood floors, chandelier<br>
-                        <strong>Kitchen :</strong>                       
-                        Driveway fits 2 additional cars<br>
-                        <strong>Yard :</strong> 
-                        Fenced backyard, landscaped, sprinkler syst<br>
-                        <strong>Pool :</strong>                                          
-                        In-ground, 20x10 ft, with a pool house<br>
-                        <strong>Deck/Patio :</strong> 
-                        20x15 ft, covered, with ceiling fan<br>
-                        <strong>Roof :</strong> 
-                        Asphalt shingles, new<br>
-                        <strong>Siding :</strong> 
-                        Brick and stone 
-                    </p>
+                    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 p-2.5">
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Living Room :</p>
+                            <p class="text-left w-full">20x18 ft, hardwood floors, gas fireplace</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Dining Room :</p>
+                            <p class="text-left w-full">18x15 ft, granite countertops, stainless steel appliances, island, pantry</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bedroom :</p>
+                            <p class="text-left w-full">20x18 ft, walk-in closet, en-suite bathroom </p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Master Bathroom :</p>
+                            <p class="text-left w-full">15x12 ft, double sink, soaking tub, separate shower</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Additional Bathrooms :</p>
+                            <p class="text-left w-full">Full bath on the second floor, half bath on the main floor</p>
+                        </div>
+                        <div class="w-full flex flex-row justify-around items-start">
+                            <p class="text-left w-full">Laundry Room :</p>
+                            <p class="text-left w-full">10x8 ft, washer and dryer included </p>
+                        </div>
+        
+                    </div>
                 </details>
             </div>
         </div>
@@ -543,25 +611,6 @@
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- <script>
-    // swiper js script
-
-    const swiper = new Swiper('.swiper', {
-        autoplay: {
-            delay: 2000,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            type: "bullets"
-        }
-
-    })
-</script> -->
 <script>
     // Image paths for pagination
     const paginationImages = [
@@ -588,6 +637,22 @@
             }
         }
     });
+
+    swiper.on('slideChange', function () {
+        const activeIndex = swiper.activeIndex;
+        const bullets = document.querySelectorAll('.swiper-pagination-thumbnail');
+        bullets.forEach((bullet, index) => {
+            bullet.style.opacity = index === activeIndex ? '1' : '0.5';
+        });
+    });
+
+    // Initialize opacity for the first bullet
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.swiper-pagination-thumbnail').forEach((bullet, index) => {
+            bullet.style.opacity = index === 0 ? '1' : '0.5';
+        });
+    });
+</script>
 </script>
 <script src="../assets/script/propertypage.js"></script>
 </html>
