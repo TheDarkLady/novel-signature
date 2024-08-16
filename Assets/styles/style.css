@@ -715,6 +715,24 @@ body {
     animation: scaleUp 1s ease-in-out;
 }
 
+.our-story-card-heading{
+    font-family: 'Rollgates';    
+    font-size: 25px;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+    color: #0a0907;
+}
+
+.our-story-card-para{
+    font-family: 'Abhaya libre';
+    font-size: 20px;
+    color: #666666;
+}
+.our-story-card{
+    box-shadow: 0 .7961918735236395px 2.3885756205709185px -.625px #0000000d, 0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d, 0 6.382653521484461px 19.147960564453385px -1.875px #0000000d, 0 20px 60px -2.5px #0000000d;
+    border-radius: 20px;
+}
+
 /* meet our team section ends */
 /**********`About us page ends  **********/
 

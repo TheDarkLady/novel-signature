@@ -33,8 +33,8 @@
     </script>
 </head>
 <body>
-    <!-- header starts -->
-    <header class="h-20">
+     <!-- header starts -->
+     <header class="h-20">
         <nav>
             <!-- navbar for large screens starts -->
             <div class="hidden md:hidden lg:block ">
@@ -50,8 +50,12 @@
                             <li><a class="text-18px " href="./upcoming-homes.html">Upcoming Homes</a></li>
                         </ul>
                     </li>
-                    <li class="flex items-center">
-                        <a class="text-18px " href="./about.html">About</a>
+                    <li class="flex items-center h-20">
+                        <a class="text-18px " href="#">About</a>
+                        <ul class="text-18px dropdown" href="#">
+                            <li><a class="text-18px " href="./about.html">Our Story</a></li>
+                            <li><a class="text-18px " href="./our-team.html">Our Team</a></li>
+                        </ul>
                     </li>
                     <li class="flex items-center">
                         <img class="w-60" src="https://noveloffice.in/wp-content/uploads/2023/08/novel-office-logo.webp"
@@ -153,7 +157,6 @@
     </header>
     <div class="h-[80px] bg-themeColor"></div>
     <!-- header ends -->
-    
     <!-- heading section starts -->
      <div class="bg-featureListing flex flex-col justify-end items-start h-[200px] mx-auto p-5">
         <div class="max-w-[1200px] w-full flex flex-col justify-center items-start mx-auto fade-down">
@@ -199,43 +202,25 @@
     <!-- About Novel office section ends -->
 
     <!-- Meet our team section starts  -->
-     <div class="h-full lg:h-screen bg-aboutNovel p-10 flex flex-col justify-center items-center">
+     <div class="h-full lg:h-[80vh] bg-white p-10 flex flex-col justify-center items-center max-w-[1200px] mx-auto">
         <div class="flex flex-col justify-center items-center gap-y-5">
-            <div class="flex flex-col justify-center items-center w-full max-w-[1200px] mx-auto p-5 ">
-                <h2 class="meet-our-team-heading mx-10 fade-down">Meet Our Team</h2>
-            </div>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 w-full max-w-[1200px] mx-auto p-5">
-                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
-                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
-                        <a href="./portfolio.html">
-                            <img src="../assets/images/our-team-img1.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
-                        </a>
-                    </div>
-                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
-                        <p class="text-18px">Name</p>
-                        <p class="text-16px font-medium">Designation</p>
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in ">
+                    <div class="bg-white our-story-card flex-col justify-start items-start lg:items-start p-5 w-full h-[300px]">
+                        <h4 class="mb-5 py-5 our-story-card-heading font-medium">Our Vision</h4>
+                        <p class="text-16px font-medium our-story-card-para font-medium">Thank you for building such an empowering tool, especially for designers! The site went from Figma to Framer in less than a week!</p>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
-                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
-                        <a href="./portfolio.html">
-                            <img src="../assets/images/our-team-img2.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
-                        </a>
-                    </div>
-                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
-                        <p class="text-18px">Name</p>
-                        <p class="text-16px font-medium">Designation</p>
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in ">
+                    <div class="bg-white our-story-card flex-col justify-start items-start lg:items-start p-5 w-full h-[300px]">
+                        <h4 class="mb-5 py-5 our-story-card-heading font-medium">Our Mission</h4>
+                        <p class="text-16px font-medium our-story-card-para font-medium">Playing around with @framer while building a landing page for a side project. I’m terrible at animations, but they make it so easy!</p>
                     </div>
                 </div>
-                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in">
-                    <div class="flex flex-col justify-center items-center md:items-start lg:items-start gap-y-2.5">
-                        <a href="./portfolio.html">
-                            <img src="../assets/images/our-team-img3.jpg" alt="" class="w-[80%] md:w-auto lg:w-auto">
-                        </a>
-                    </div>
-                    <div class="flex flex-col justify-start items-center md:items-start lg:items-start pl-2.5 w-full">
-                        <p class="text-18px">Name</p>
-                        <p class="text-16px font-medium">Designation</p>
+                <div class="flex flex-col justify-center items-start gap-y-2.5 fade-in ">
+                    <div class="bg-white our-story-card flex-col justify-start items-start lg:items-start p-5 w-full h-[300px]">
+                        <h4 class="mb-5 py-5 our-story-card-heading font-medium">Our Values</h4>
+                        <p class="text-16px font-medium our-story-card-para font-medium">I’ve built pretty handy sites powered by Craft or WordPress in the past, but seeing @framer tackle CMS stuff so effortlessly is mind-boggling</p>
                     </div>
                 </div>
     
