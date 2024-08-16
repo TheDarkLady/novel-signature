@@ -184,6 +184,7 @@ body {
 }
 .home-search-bar::placeholder {
     color: #c3ac91;
+    font-weight: 500           ;
 }
 .fade-up {
     opacity: 0;
@@ -215,7 +216,7 @@ body {
 }
 .timeless-para{
     font-family: 'Abhaya libre';
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 @media only screen and (max-width:937px){
@@ -285,7 +286,7 @@ body {
     font-family: 'Abhaya libre';
     font-size: 18px;
     font-weight: 500;
-    text-align: left;
+    text-align: justify;
 }
 @media only screen and (max-width: 1023px) {
     .qulity-card-heading{
@@ -431,14 +432,14 @@ body {
 .virtual-tour-heading{
     font-family: 'Rollgates';    
     font-size: 50px;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 2px;
     color: #0a0907;
     border-bottom: 1px solid #0a0907;
 }
 .virtual-tour-para{
     font-family: 'Abhaya libre';
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #0a0907;
 }
@@ -484,7 +485,7 @@ body {
 }
 .Walkthrough-para{
     font-family: 'Abhaya libre';
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #fff;
 }
@@ -548,19 +549,19 @@ body {
 }
 .testimonial-card-heading{
     font-family: "Abhaya Libre";
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #0a0907;
 }
 .testimonial-card-subheading{
     font-family: "Abhaya Libre";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #5b4f40cc;
 }
 .testimonial-card-description{
     font-family: "Abhaya Libre";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #0a0907;
 }
@@ -621,7 +622,7 @@ body {
 }
 .contact-us-list{
     font-family: 'Abhaya libre';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
 }
@@ -1144,7 +1145,7 @@ body {
     color: #0a0907;
 }
 .faq-para{
-    font-family: 'abhaya libre';
+    font-family: 'rollgates';
     font-size: 22px;
     color: #0a0907;
 }
