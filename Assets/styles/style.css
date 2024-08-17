@@ -860,13 +860,15 @@ body {
    align-items: center;
    gap: 20px;
    flex-wrap: nowrap;
-   animation: blog-slide 40s infinite linear;
+   animation: blog-slide 30s infinite linear;
 }
 .blog-carousel-item {
     overflow: hidden; /* Hide the overflow */
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 750px;
+    
 }
 /* .blog-carousel-slide img{
     height: auto;
@@ -892,9 +894,9 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    /* max-width: 400px; */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
     transition: transform 0.5s ease-in-out; /* Smooth transition with easing */
-    transform: scale(1); /* Initial scale */
+    transform: scale(1); /* In/* Initial scale */
 }
 
 .blog-carousel-slide img:hover {
@@ -910,6 +912,32 @@ body {
         transform: translateX(-100%);
     }
     
+}
+
+@media only screen and (max-width: 1023px) {
+    .blog-carousel-item {
+        min-width: 650px;
+    }
+}
+@media only screen and (max-width:767px) {
+    .blog-carousel-item {
+        min-width: 550px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .blog-carousel-item {
+        min-width: 450px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .blog-carousel-item {
+        min-width: 350px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .blog-carousel-item {
+        min-width: 250px;
+    }
 }
 /* blog carousel section ends */
 
@@ -947,6 +975,15 @@ body {
 .browse-through-card-para{
     font-family: 'Abhaya libre';
     font-size: 16px;
+}
+.button{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Abhaya libre';
+    font-size: 16px;
+}
+.button:hover{
+    background-color: #444444;
 }
 
 /* browse through categories section ends */
